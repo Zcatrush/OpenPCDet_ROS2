@@ -10,7 +10,7 @@
 # **使用方法**
 构建：
 ```
-cd ~/ros2_ws
+cd ~/OpenPCDet_ROS2
 python3 -m pip install catkin_pkg
 sudo apt install ros-humble-ament-cmake-nose -y
 python3 -m pip install nose
@@ -23,19 +23,19 @@ colcon build --symlink-install --packages-select ros2_numpy pcdet_ros2 simple_pc
 构建完成之后执行：
 ```
 #新建终端
-cd ~/ros2_ws
+cd ~/OpenPCDet_ROS2
 source install/setup.bash
 ros2 run simple_pcd_publisher pointcloud_publisher
 ```
 ```
 #新建终端
-cd ~/ros2_ws
+cd ~/OpenPCDet_ROS2
 source install/setup.bash
 ros2 launch pcdet_ros2 pcdet.launch.py
 ```
 ```
 #新建终端
-cd ~/ros2_ws
+cd ~/OpenPCDet_ROS2
 source install/setup.bash
 ros2 run simple_pcd_publisher detection_visualizer
 ```
