@@ -1,0 +1,99 @@
+running develop
+running egg_info
+creating pcdet_ros2.egg-info
+writing pcdet_ros2.egg-info/PKG-INFO
+writing dependency_links to pcdet_ros2.egg-info/dependency_links.txt
+writing entry points to pcdet_ros2.egg-info/entry_points.txt
+writing requirements to pcdet_ros2.egg-info/requires.txt
+writing top-level names to pcdet_ros2.egg-info/top_level.txt
+writing manifest file 'pcdet_ros2.egg-info/SOURCES.txt'
+reading manifest file 'pcdet_ros2.egg-info/SOURCES.txt'
+writing manifest file 'pcdet_ros2.egg-info/SOURCES.txt'
+running build_ext
+Creating /home/ikun/ros2_ws/install/pcdet_ros2/lib/python3.10/site-packages/pcdet-ros2.egg-link (link to .)
+Installing pcdet script to /home/ikun/ros2_ws/install/pcdet_ros2/lib/pcdet_ros2
+Installing simple_pcd_pub script to /home/ikun/ros2_ws/install/pcdet_ros2/lib/pcdet_ros2
+
+Installed /home/ikun/ros2_ws/build/pcdet_ros2
+running symlink_data
+creating /home/ikun/ros2_ws/install/pcdet_ros2/share/ament_index
+creating /home/ikun/ros2_ws/install/pcdet_ros2/share/ament_index/resource_index
+creating /home/ikun/ros2_ws/install/pcdet_ros2/share/ament_index/resource_index/packages
+symbolically linking /home/ikun/ros2_ws/build/pcdet_ros2/resource/pcdet_ros2 -> /home/ikun/ros2_ws/install/pcdet_ros2/share/ament_index/resource_index/packages
+symbolically linking /home/ikun/ros2_ws/build/pcdet_ros2/package.xml -> /home/ikun/ros2_ws/install/pcdet_ros2/share/pcdet_ros2
+creating /home/ikun/ros2_ws/install/pcdet_ros2/share/pcdet_ros2/launch
+symbolically linking /home/ikun/ros2_ws/build/pcdet_ros2/launch/parta2_free.launch.xml -> /home/ikun/ros2_ws/install/pcdet_ros2/share/pcdet_ros2/launch
+symbolically linking /home/ikun/ros2_ws/build/pcdet_ros2/launch/pcdet.launch.py -> /home/ikun/ros2_ws/install/pcdet_ros2/share/pcdet_ros2/launch
+symbolically linking /home/ikun/ros2_ws/build/pcdet_ros2/launch/second_multihead_nds.launch.xml -> /home/ikun/ros2_ws/install/pcdet_ros2/share/pcdet_ros2/launch
+symbolically linking /home/ikun/ros2_ws/build/pcdet_ros2/launch/pp_multihead_nds.launch.xml -> /home/ikun/ros2_ws/install/pcdet_ros2/share/pcdet_ros2/launch
+creating /home/ikun/ros2_ws/install/pcdet_ros2/share/pcdet_ros2/config
+symbolically linking /home/ikun/ros2_ws/build/pcdet_ros2/config/parta2_free.param.yaml -> /home/ikun/ros2_ws/install/pcdet_ros2/share/pcdet_ros2/config
+symbolically linking /home/ikun/ros2_ws/build/pcdet_ros2/config/cbgs_second_multihead_nds.param.yaml -> /home/ikun/ros2_ws/install/pcdet_ros2/share/pcdet_ros2/config
+symbolically linking /home/ikun/ros2_ws/build/pcdet_ros2/config/pp_multihead_nds.param.yaml -> /home/ikun/ros2_ws/install/pcdet_ros2/share/pcdet_ros2/config
+symbolically linking /home/ikun/ros2_ws/build/pcdet_ros2/config/pcdet_pvrcnn.param.yaml -> /home/ikun/ros2_ws/install/pcdet_ros2/share/pcdet_ros2/config
+creating /home/ikun/ros2_ws/install/pcdet_ros2/share/pcdet_ros2/cfgs
+creating /home/ikun/ros2_ws/install/pcdet_ros2/share/pcdet_ros2/cfgs/custom_models
+symbolically linking /home/ikun/ros2_ws/build/pcdet_ros2/cfgs/custom_models/second.yaml -> /home/ikun/ros2_ws/install/pcdet_ros2/share/pcdet_ros2/cfgs/custom_models
+symbolically linking /home/ikun/ros2_ws/build/pcdet_ros2/cfgs/custom_models/pv_rcnn.yaml -> /home/ikun/ros2_ws/install/pcdet_ros2/share/pcdet_ros2/cfgs/custom_models
+creating /home/ikun/ros2_ws/install/pcdet_ros2/share/pcdet_ros2/cfgs/dataset_configs
+symbolically linking /home/ikun/ros2_ws/build/pcdet_ros2/cfgs/dataset_configs/nuscenes_dataset.yaml -> /home/ikun/ros2_ws/install/pcdet_ros2/share/pcdet_ros2/cfgs/dataset_configs
+symbolically linking /home/ikun/ros2_ws/build/pcdet_ros2/cfgs/dataset_configs/waymo_dataset.yaml -> /home/ikun/ros2_ws/install/pcdet_ros2/share/pcdet_ros2/cfgs/dataset_configs
+symbolically linking /home/ikun/ros2_ws/build/pcdet_ros2/cfgs/dataset_configs/custom_dataset.yaml -> /home/ikun/ros2_ws/install/pcdet_ros2/share/pcdet_ros2/cfgs/dataset_configs
+symbolically linking /home/ikun/ros2_ws/build/pcdet_ros2/cfgs/dataset_configs/kitti_dataset.yaml -> /home/ikun/ros2_ws/install/pcdet_ros2/share/pcdet_ros2/cfgs/dataset_configs
+symbolically linking /home/ikun/ros2_ws/build/pcdet_ros2/cfgs/dataset_configs/waymo_dataset_multiframe.yaml -> /home/ikun/ros2_ws/install/pcdet_ros2/share/pcdet_ros2/cfgs/dataset_configs
+symbolically linking /home/ikun/ros2_ws/build/pcdet_ros2/cfgs/dataset_configs/once_dataset.yaml -> /home/ikun/ros2_ws/install/pcdet_ros2/share/pcdet_ros2/cfgs/dataset_configs
+symbolically linking /home/ikun/ros2_ws/build/pcdet_ros2/cfgs/dataset_configs/lyft_dataset.yaml -> /home/ikun/ros2_ws/install/pcdet_ros2/share/pcdet_ros2/cfgs/dataset_configs
+symbolically linking /home/ikun/ros2_ws/build/pcdet_ros2/cfgs/dataset_configs/pandaset_dataset.yaml -> /home/ikun/ros2_ws/install/pcdet_ros2/share/pcdet_ros2/cfgs/dataset_configs
+creating /home/ikun/ros2_ws/install/pcdet_ros2/share/pcdet_ros2/cfgs/kitti_models
+symbolically linking /home/ikun/ros2_ws/build/pcdet_ros2/cfgs/kitti_models/pointrcnn_iou.yaml -> /home/ikun/ros2_ws/install/pcdet_ros2/share/pcdet_ros2/cfgs/kitti_models
+symbolically linking /home/ikun/ros2_ws/build/pcdet_ros2/cfgs/kitti_models/second.yaml -> /home/ikun/ros2_ws/install/pcdet_ros2/share/pcdet_ros2/cfgs/kitti_models
+symbolically linking /home/ikun/ros2_ws/build/pcdet_ros2/cfgs/kitti_models/PartA2.yaml -> /home/ikun/ros2_ws/install/pcdet_ros2/share/pcdet_ros2/cfgs/kitti_models
+symbolically linking /home/ikun/ros2_ws/build/pcdet_ros2/cfgs/kitti_models/second_multihead.yaml -> /home/ikun/ros2_ws/install/pcdet_ros2/share/pcdet_ros2/cfgs/kitti_models
+symbolically linking /home/ikun/ros2_ws/build/pcdet_ros2/cfgs/kitti_models/pointrcnn.yaml -> /home/ikun/ros2_ws/install/pcdet_ros2/share/pcdet_ros2/cfgs/kitti_models
+symbolically linking /home/ikun/ros2_ws/build/pcdet_ros2/cfgs/kitti_models/voxel_rcnn_car_focal_multimodal.yaml -> /home/ikun/ros2_ws/install/pcdet_ros2/share/pcdet_ros2/cfgs/kitti_models
+symbolically linking /home/ikun/ros2_ws/build/pcdet_ros2/cfgs/kitti_models/pointpillar_pyramid_aug.yaml -> /home/ikun/ros2_ws/install/pcdet_ros2/share/pcdet_ros2/cfgs/kitti_models
+symbolically linking /home/ikun/ros2_ws/build/pcdet_ros2/cfgs/kitti_models/second_iou.yaml -> /home/ikun/ros2_ws/install/pcdet_ros2/share/pcdet_ros2/cfgs/kitti_models
+symbolically linking /home/ikun/ros2_ws/build/pcdet_ros2/cfgs/kitti_models/CaDDN.yaml -> /home/ikun/ros2_ws/install/pcdet_ros2/share/pcdet_ros2/cfgs/kitti_models
+symbolically linking /home/ikun/ros2_ws/build/pcdet_ros2/cfgs/kitti_models/pv_rcnn.yaml -> /home/ikun/ros2_ws/install/pcdet_ros2/share/pcdet_ros2/cfgs/kitti_models
+symbolically linking /home/ikun/ros2_ws/build/pcdet_ros2/cfgs/kitti_models/voxel_rcnn_car.yaml -> /home/ikun/ros2_ws/install/pcdet_ros2/share/pcdet_ros2/cfgs/kitti_models
+symbolically linking /home/ikun/ros2_ws/build/pcdet_ros2/cfgs/kitti_models/PartA2_free.yaml -> /home/ikun/ros2_ws/install/pcdet_ros2/share/pcdet_ros2/cfgs/kitti_models
+symbolically linking /home/ikun/ros2_ws/build/pcdet_ros2/cfgs/kitti_models/pointpillar_newaugs.yaml -> /home/ikun/ros2_ws/install/pcdet_ros2/share/pcdet_ros2/cfgs/kitti_models
+symbolically linking /home/ikun/ros2_ws/build/pcdet_ros2/cfgs/kitti_models/pointpillar.yaml -> /home/ikun/ros2_ws/install/pcdet_ros2/share/pcdet_ros2/cfgs/kitti_models
+symbolically linking /home/ikun/ros2_ws/build/pcdet_ros2/cfgs/kitti_models/pillarnet.yaml -> /home/ikun/ros2_ws/install/pcdet_ros2/share/pcdet_ros2/cfgs/kitti_models
+creating /home/ikun/ros2_ws/install/pcdet_ros2/share/pcdet_ros2/cfgs/lyft_models
+symbolically linking /home/ikun/ros2_ws/build/pcdet_ros2/cfgs/lyft_models/cbgs_second-nores_multihead.yaml -> /home/ikun/ros2_ws/install/pcdet_ros2/share/pcdet_ros2/cfgs/lyft_models
+symbolically linking /home/ikun/ros2_ws/build/pcdet_ros2/cfgs/lyft_models/cbgs_second_multihead.yaml -> /home/ikun/ros2_ws/install/pcdet_ros2/share/pcdet_ros2/cfgs/lyft_models
+creating /home/ikun/ros2_ws/install/pcdet_ros2/share/pcdet_ros2/cfgs/nuscenes_models
+symbolically linking /home/ikun/ros2_ws/build/pcdet_ros2/cfgs/nuscenes_models/cbgs_voxel0075_res3d_centerpoint.yaml -> /home/ikun/ros2_ws/install/pcdet_ros2/share/pcdet_ros2/cfgs/nuscenes_models
+symbolically linking /home/ikun/ros2_ws/build/pcdet_ros2/cfgs/nuscenes_models/cbgs_second_multihead.yaml -> /home/ikun/ros2_ws/install/pcdet_ros2/share/pcdet_ros2/cfgs/nuscenes_models
+symbolically linking /home/ikun/ros2_ws/build/pcdet_ros2/cfgs/nuscenes_models/cbgs_pp_multihead.yaml -> /home/ikun/ros2_ws/install/pcdet_ros2/share/pcdet_ros2/cfgs/nuscenes_models
+symbolically linking /home/ikun/ros2_ws/build/pcdet_ros2/cfgs/nuscenes_models/cbgs_dyn_pp_centerpoint.yaml -> /home/ikun/ros2_ws/install/pcdet_ros2/share/pcdet_ros2/cfgs/nuscenes_models
+symbolically linking /home/ikun/ros2_ws/build/pcdet_ros2/cfgs/nuscenes_models/cbgs_pillar0075_res2d_centerpoint.yaml -> /home/ikun/ros2_ws/install/pcdet_ros2/share/pcdet_ros2/cfgs/nuscenes_models
+symbolically linking /home/ikun/ros2_ws/build/pcdet_ros2/cfgs/nuscenes_models/cbgs_voxel01_res3d_centerpoint.yaml -> /home/ikun/ros2_ws/install/pcdet_ros2/share/pcdet_ros2/cfgs/nuscenes_models
+creating /home/ikun/ros2_ws/install/pcdet_ros2/share/pcdet_ros2/cfgs/once_models
+symbolically linking /home/ikun/ros2_ws/build/pcdet_ros2/cfgs/once_models/second.yaml -> /home/ikun/ros2_ws/install/pcdet_ros2/share/pcdet_ros2/cfgs/once_models
+symbolically linking /home/ikun/ros2_ws/build/pcdet_ros2/cfgs/once_models/pointrcnn.yaml -> /home/ikun/ros2_ws/install/pcdet_ros2/share/pcdet_ros2/cfgs/once_models
+symbolically linking /home/ikun/ros2_ws/build/pcdet_ros2/cfgs/once_models/pv_rcnn.yaml -> /home/ikun/ros2_ws/install/pcdet_ros2/share/pcdet_ros2/cfgs/once_models
+symbolically linking /home/ikun/ros2_ws/build/pcdet_ros2/cfgs/once_models/centerpoint.yaml -> /home/ikun/ros2_ws/install/pcdet_ros2/share/pcdet_ros2/cfgs/once_models
+symbolically linking /home/ikun/ros2_ws/build/pcdet_ros2/cfgs/once_models/pointpillar.yaml -> /home/ikun/ros2_ws/install/pcdet_ros2/share/pcdet_ros2/cfgs/once_models
+creating /home/ikun/ros2_ws/install/pcdet_ros2/share/pcdet_ros2/cfgs/waymo_models
+symbolically linking /home/ikun/ros2_ws/build/pcdet_ros2/cfgs/waymo_models/pv_rcnn_with_centerhead_rpn.yaml -> /home/ikun/ros2_ws/install/pcdet_ros2/share/pcdet_ros2/cfgs/waymo_models
+symbolically linking /home/ikun/ros2_ws/build/pcdet_ros2/cfgs/waymo_models/second.yaml -> /home/ikun/ros2_ws/install/pcdet_ros2/share/pcdet_ros2/cfgs/waymo_models
+symbolically linking /home/ikun/ros2_ws/build/pcdet_ros2/cfgs/waymo_models/PartA2.yaml -> /home/ikun/ros2_ws/install/pcdet_ros2/share/pcdet_ros2/cfgs/waymo_models
+symbolically linking /home/ikun/ros2_ws/build/pcdet_ros2/cfgs/waymo_models/pv_rcnn_plusplus_resnet_2frames.yaml -> /home/ikun/ros2_ws/install/pcdet_ros2/share/pcdet_ros2/cfgs/waymo_models
+symbolically linking /home/ikun/ros2_ws/build/pcdet_ros2/cfgs/waymo_models/mppnet_e2e_memorybank_inference.yaml -> /home/ikun/ros2_ws/install/pcdet_ros2/share/pcdet_ros2/cfgs/waymo_models
+symbolically linking /home/ikun/ros2_ws/build/pcdet_ros2/cfgs/waymo_models/mppnet_4frames.yaml -> /home/ikun/ros2_ws/install/pcdet_ros2/share/pcdet_ros2/cfgs/waymo_models
+symbolically linking /home/ikun/ros2_ws/build/pcdet_ros2/cfgs/waymo_models/pv_rcnn.yaml -> /home/ikun/ros2_ws/install/pcdet_ros2/share/pcdet_ros2/cfgs/waymo_models
+symbolically linking /home/ikun/ros2_ws/build/pcdet_ros2/cfgs/waymo_models/centerpoint_without_resnet.yaml -> /home/ikun/ros2_ws/install/pcdet_ros2/share/pcdet_ros2/cfgs/waymo_models
+symbolically linking /home/ikun/ros2_ws/build/pcdet_ros2/cfgs/waymo_models/pv_rcnn_plusplus_resnet.yaml -> /home/ikun/ros2_ws/install/pcdet_ros2/share/pcdet_ros2/cfgs/waymo_models
+symbolically linking /home/ikun/ros2_ws/build/pcdet_ros2/cfgs/waymo_models/centerpoint_dyn_pillar_1x.yaml -> /home/ikun/ros2_ws/install/pcdet_ros2/share/pcdet_ros2/cfgs/waymo_models
+symbolically linking /home/ikun/ros2_ws/build/pcdet_ros2/cfgs/waymo_models/voxel_rcnn_with_centerhead_dyn_voxel.yaml -> /home/ikun/ros2_ws/install/pcdet_ros2/share/pcdet_ros2/cfgs/waymo_models
+symbolically linking /home/ikun/ros2_ws/build/pcdet_ros2/cfgs/waymo_models/pv_rcnn_plusplus.yaml -> /home/ikun/ros2_ws/install/pcdet_ros2/share/pcdet_ros2/cfgs/waymo_models
+symbolically linking /home/ikun/ros2_ws/build/pcdet_ros2/cfgs/waymo_models/pointpillar_1x.yaml -> /home/ikun/ros2_ws/install/pcdet_ros2/share/pcdet_ros2/cfgs/waymo_models
+symbolically linking /home/ikun/ros2_ws/build/pcdet_ros2/cfgs/waymo_models/mppnet_16frames.yaml -> /home/ikun/ros2_ws/install/pcdet_ros2/share/pcdet_ros2/cfgs/waymo_models
+symbolically linking /home/ikun/ros2_ws/build/pcdet_ros2/cfgs/waymo_models/centerpoint.yaml -> /home/ikun/ros2_ws/install/pcdet_ros2/share/pcdet_ros2/cfgs/waymo_models
+symbolically linking /home/ikun/ros2_ws/build/pcdet_ros2/cfgs/waymo_models/centerpoint_pillar_1x.yaml -> /home/ikun/ros2_ws/install/pcdet_ros2/share/pcdet_ros2/cfgs/waymo_models
+symbolically linking /home/ikun/ros2_ws/build/pcdet_ros2/cfgs/waymo_models/centerpoint_4frames.yaml -> /home/ikun/ros2_ws/install/pcdet_ros2/share/pcdet_ros2/cfgs/waymo_models
+symbolically linking /home/ikun/ros2_ws/build/pcdet_ros2/cfgs/waymo_models/pillarnet.yaml -> /home/ikun/ros2_ws/install/pcdet_ros2/share/pcdet_ros2/cfgs/waymo_models
+creating /home/ikun/ros2_ws/install/pcdet_ros2/share/pcdet_ros2/checkpoints
+symbolically linking /home/ikun/ros2_ws/build/pcdet_ros2/checkpoints/pv_rcnn_8369.pth -> /home/ikun/ros2_ws/install/pcdet_ros2/share/pcdet_ros2/checkpoints

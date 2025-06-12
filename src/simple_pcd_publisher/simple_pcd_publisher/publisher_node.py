@@ -5,16 +5,16 @@ import struct
 import numpy as np
 from std_msgs.msg import Header
 
-class KittiPointCloudPublisher(Node):
+class PointCloudPublisher(Node):
     def __init__(self):
-        super().__init__('kitti_pointcloud_publisher')
-        self.publisher_ = self.create_publisher(PointCloud2, '/kitti/point_cloud', 10)
+        super().__init__('pointcloud_publisher')
+        self.publisher_ = self.create_publisher(PointCloud2, '/point_cloud', 10)
         self.timer = self.create_timer(1.0, self.timer_callback)  # 1秒发一次
         self.file_index = 0
-        self.files = sorted(self.get_kitti_files('/home/ikun/OpenPCDet/data/kitti/training/velodyne'))
+        self.files = sorted(self.get_files('/home/ikun/OpenPCDet/data/kitti/training/velodyne'))
         self.get_logger().info(f'Found {len(self.files)} pointcloud files.')
 
-    def get_kitti_files(self, folder):
+    def get_files(self, folder):
         import os
         return [os.path.join(folder, f) for f in os.listdir(folder) if f.endswith('.bin')]
 
@@ -56,7 +56,7 @@ class KittiPointCloudPublisher(Node):
 
 def main(args=None):
     rclpy.init(args=args)
-    node = KittiPointCloudPublisher()
+    node = PointCloudPublisher()
     rclpy.spin(node)
     node.destroy_node()
     rclpy.shutdown()

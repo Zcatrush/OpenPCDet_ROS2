@@ -1,4 +1,4 @@
 [console_scripts]
 detection_visualizer = simple_pcd_publisher.detection_visualizer:main
-kitti_pointcloud_publisher = simple_pcd_publisher.publisher_node:main
+pointcloud_publisher = simple_pcd_publisher.publisher_node:main
 

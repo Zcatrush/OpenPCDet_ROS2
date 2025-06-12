@@ -20,7 +20,7 @@ setup(
     tests_require=['pytest'],
     entry_points={
         'console_scripts': [
-        'kitti_pointcloud_publisher = simple_pcd_publisher.publisher_node:main',
+        'pointcloud_publisher = simple_pcd_publisher.publisher_node:main',
         'detection_visualizer = simple_pcd_publisher.detection_visualizer:main',
         ],
     },

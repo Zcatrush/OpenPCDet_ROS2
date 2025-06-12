@@ -80,6 +80,7 @@ _colcon_package_sh_source_script() {
 # source sh hooks
 _colcon_package_sh_source_script "$COLCON_CURRENT_PREFIX/share/pcdet_ros2/hook/pythonpath.sh"
 _colcon_package_sh_source_script "$COLCON_CURRENT_PREFIX/share/pcdet_ros2/hook/ament_prefix_path.sh"
+_colcon_package_sh_source_script "$COLCON_CURRENT_PREFIX/../../build/pcdet_ros2/share/pcdet_ros2/hook/pythonpath_develop.sh"
 
 unset _colcon_package_sh_source_script
 unset COLCON_CURRENT_PREFIX
