@@ -19,15 +19,16 @@ python3 -m pip install transform3d
 git clone https://github.com/pradhanshrijal/pcdet_ros2
 cd ..
 rosdep install -i --from-path src --rosdistro humble -y
-colcon build --symlink-install --packages-select ros2_numpy pcdet_ros2
-# Source the workspace
+rm -rf build install log
+colcon build --symlink-install --packages-select ros2_numpy pcdet_ros2 simple_pcd_publisher
+
 ```
 环境配置完成之后执行：
 ```
 #新建终端
 cd ~/ros2_ws
 source install/setup.bash
-ros2 run simple_pcd_publisher kitti_pointcloud_publisher
+ros2 run simple_pcd_publisher pointcloud_publisher
 ```
 ```
 #新建终端
