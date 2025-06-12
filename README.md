@@ -2,7 +2,8 @@
 参考https://github.com/pradhanshrijal/pcdet_ros2.git
 - Ubuntu 22.04, ROS 2 Humble
 - CUDA 11.7, CuDNN 8.5.0.96
-- Python 3.10, PyTorch 2.0
+- Python 3.10, PyTorch 2.0.1+cu117
+- NumPy 1.25.2
 - OpenPCDet框架
   - 官方项目：https://github.com/open-mmlab/OpenPCDet.git
   - 安装参考：https://zhuanlan.zhihu.com/p/663973630
