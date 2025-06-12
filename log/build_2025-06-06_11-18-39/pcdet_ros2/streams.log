@@ -1,0 +1,118 @@
+[0.453s] Invoking command in '/home/ikun/ros2_ws/src/pcdet_ros2': PYTHONPATH=/home/ikun/ros2_ws/build/pcdet_ros2/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/ikun/ros2_ws/install/pcdet_ros2/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/pcdet_ros2 build --build-base /home/ikun/ros2_ws/build/pcdet_ros2/build install --record /home/ikun/ros2_ws/build/pcdet_ros2/install.log --single-version-externally-managed install_data
+[0.616s] running egg_info
+[0.616s] creating ../../build/pcdet_ros2/pcdet_ros2.egg-info
+[0.616s] writing ../../build/pcdet_ros2/pcdet_ros2.egg-info/PKG-INFO
+[0.616s] writing dependency_links to ../../build/pcdet_ros2/pcdet_ros2.egg-info/dependency_links.txt
+[0.616s] writing entry points to ../../build/pcdet_ros2/pcdet_ros2.egg-info/entry_points.txt
+[0.617s] writing requirements to ../../build/pcdet_ros2/pcdet_ros2.egg-info/requires.txt
+[0.617s] writing top-level names to ../../build/pcdet_ros2/pcdet_ros2.egg-info/top_level.txt
+[0.617s] writing manifest file '../../build/pcdet_ros2/pcdet_ros2.egg-info/SOURCES.txt'
+[0.618s] reading manifest file '../../build/pcdet_ros2/pcdet_ros2.egg-info/SOURCES.txt'
+[0.618s] adding license file 'LICENSE'
+[0.618s] writing manifest file '../../build/pcdet_ros2/pcdet_ros2.egg-info/SOURCES.txt'
+[0.618s] running build
+[0.618s] running build_py
+[0.618s] creating /home/ikun/ros2_ws/build/pcdet_ros2/build
+[0.618s] creating /home/ikun/ros2_ws/build/pcdet_ros2/build/lib
+[0.618s] creating /home/ikun/ros2_ws/build/pcdet_ros2/build/lib/pcdet_ros2
+[0.619s] copying pcdet_ros2/pcdet_node.py -> /home/ikun/ros2_ws/build/pcdet_ros2/build/lib/pcdet_ros2
+[0.619s] copying pcdet_ros2/config.py -> /home/ikun/ros2_ws/build/pcdet_ros2/build/lib/pcdet_ros2
+[0.619s] copying pcdet_ros2/__init__.py -> /home/ikun/ros2_ws/build/pcdet_ros2/build/lib/pcdet_ros2
+[0.619s] running install
+[0.619s] running install_lib
+[0.619s] creating /home/ikun/ros2_ws/install/pcdet_ros2/lib/python3.10/site-packages/pcdet_ros2
+[0.619s] copying /home/ikun/ros2_ws/build/pcdet_ros2/build/lib/pcdet_ros2/pcdet_node.py -> /home/ikun/ros2_ws/install/pcdet_ros2/lib/python3.10/site-packages/pcdet_ros2
+[0.619s] copying /home/ikun/ros2_ws/build/pcdet_ros2/build/lib/pcdet_ros2/config.py -> /home/ikun/ros2_ws/install/pcdet_ros2/lib/python3.10/site-packages/pcdet_ros2
+[0.619s] copying /home/ikun/ros2_ws/build/pcdet_ros2/build/lib/pcdet_ros2/__init__.py -> /home/ikun/ros2_ws/install/pcdet_ros2/lib/python3.10/site-packages/pcdet_ros2
+[0.619s] byte-compiling /home/ikun/ros2_ws/install/pcdet_ros2/lib/python3.10/site-packages/pcdet_ros2/pcdet_node.py to pcdet_node.cpython-310.pyc
+[0.621s] byte-compiling /home/ikun/ros2_ws/install/pcdet_ros2/lib/python3.10/site-packages/pcdet_ros2/config.py to config.cpython-310.pyc
+[0.621s] byte-compiling /home/ikun/ros2_ws/install/pcdet_ros2/lib/python3.10/site-packages/pcdet_ros2/__init__.py to __init__.cpython-310.pyc
+[0.621s] running install_data
+[0.621s] creating /home/ikun/ros2_ws/install/pcdet_ros2/share/ament_index
+[0.621s] creating /home/ikun/ros2_ws/install/pcdet_ros2/share/ament_index/resource_index
+[0.621s] creating /home/ikun/ros2_ws/install/pcdet_ros2/share/ament_index/resource_index/packages
+[0.621s] copying resource/pcdet_ros2 -> /home/ikun/ros2_ws/install/pcdet_ros2/share/ament_index/resource_index/packages
+[0.621s] copying package.xml -> /home/ikun/ros2_ws/install/pcdet_ros2/share/pcdet_ros2
+[0.621s] creating /home/ikun/ros2_ws/install/pcdet_ros2/share/pcdet_ros2/launch
+[0.621s] copying launch/parta2_free.launch.xml -> /home/ikun/ros2_ws/install/pcdet_ros2/share/pcdet_ros2/launch
+[0.622s] copying launch/pcdet.launch.py -> /home/ikun/ros2_ws/install/pcdet_ros2/share/pcdet_ros2/launch
+[0.622s] copying launch/second_multihead_nds.launch.xml -> /home/ikun/ros2_ws/install/pcdet_ros2/share/pcdet_ros2/launch
+[0.622s] copying launch/pp_multihead_nds.launch.xml -> /home/ikun/ros2_ws/install/pcdet_ros2/share/pcdet_ros2/launch
+[0.622s] creating /home/ikun/ros2_ws/install/pcdet_ros2/share/pcdet_ros2/config
+[0.622s] copying config/parta2_free.param.yaml -> /home/ikun/ros2_ws/install/pcdet_ros2/share/pcdet_ros2/config
+[0.622s] copying config/cbgs_second_multihead_nds.param.yaml -> /home/ikun/ros2_ws/install/pcdet_ros2/share/pcdet_ros2/config
+[0.622s] copying config/pp_multihead_nds.param.yaml -> /home/ikun/ros2_ws/install/pcdet_ros2/share/pcdet_ros2/config
+[0.622s] copying config/pcdet_pvrcnn.param.yaml -> /home/ikun/ros2_ws/install/pcdet_ros2/share/pcdet_ros2/config
+[0.622s] creating /home/ikun/ros2_ws/install/pcdet_ros2/share/pcdet_ros2/cfgs
+[0.622s] creating /home/ikun/ros2_ws/install/pcdet_ros2/share/pcdet_ros2/cfgs/custom_models
+[0.622s] copying cfgs/custom_models/second.yaml -> /home/ikun/ros2_ws/install/pcdet_ros2/share/pcdet_ros2/cfgs/custom_models
+[0.622s] copying cfgs/custom_models/pv_rcnn.yaml -> /home/ikun/ros2_ws/install/pcdet_ros2/share/pcdet_ros2/cfgs/custom_models
+[0.622s] creating /home/ikun/ros2_ws/install/pcdet_ros2/share/pcdet_ros2/cfgs/dataset_configs
+[0.622s] copying cfgs/dataset_configs/nuscenes_dataset.yaml -> /home/ikun/ros2_ws/install/pcdet_ros2/share/pcdet_ros2/cfgs/dataset_configs
+[0.622s] copying cfgs/dataset_configs/waymo_dataset.yaml -> /home/ikun/ros2_ws/install/pcdet_ros2/share/pcdet_ros2/cfgs/dataset_configs
+[0.622s] copying cfgs/dataset_configs/custom_dataset.yaml -> /home/ikun/ros2_ws/install/pcdet_ros2/share/pcdet_ros2/cfgs/dataset_configs
+[0.622s] copying cfgs/dataset_configs/kitti_dataset.yaml -> /home/ikun/ros2_ws/install/pcdet_ros2/share/pcdet_ros2/cfgs/dataset_configs
+[0.622s] copying cfgs/dataset_configs/waymo_dataset_multiframe.yaml -> /home/ikun/ros2_ws/install/pcdet_ros2/share/pcdet_ros2/cfgs/dataset_configs
+[0.622s] copying cfgs/dataset_configs/once_dataset.yaml -> /home/ikun/ros2_ws/install/pcdet_ros2/share/pcdet_ros2/cfgs/dataset_configs
+[0.622s] copying cfgs/dataset_configs/lyft_dataset.yaml -> /home/ikun/ros2_ws/install/pcdet_ros2/share/pcdet_ros2/cfgs/dataset_configs
+[0.623s] copying cfgs/dataset_configs/pandaset_dataset.yaml -> /home/ikun/ros2_ws/install/pcdet_ros2/share/pcdet_ros2/cfgs/dataset_configs
+[0.623s] creating /home/ikun/ros2_ws/install/pcdet_ros2/share/pcdet_ros2/cfgs/kitti_models
+[0.623s] copying cfgs/kitti_models/pointrcnn_iou.yaml -> /home/ikun/ros2_ws/install/pcdet_ros2/share/pcdet_ros2/cfgs/kitti_models
+[0.623s] copying cfgs/kitti_models/second.yaml -> /home/ikun/ros2_ws/install/pcdet_ros2/share/pcdet_ros2/cfgs/kitti_models
+[0.623s] copying cfgs/kitti_models/PartA2.yaml -> /home/ikun/ros2_ws/install/pcdet_ros2/share/pcdet_ros2/cfgs/kitti_models
+[0.623s] copying cfgs/kitti_models/second_multihead.yaml -> /home/ikun/ros2_ws/install/pcdet_ros2/share/pcdet_ros2/cfgs/kitti_models
+[0.623s] copying cfgs/kitti_models/pointrcnn.yaml -> /home/ikun/ros2_ws/install/pcdet_ros2/share/pcdet_ros2/cfgs/kitti_models
+[0.623s] copying cfgs/kitti_models/voxel_rcnn_car_focal_multimodal.yaml -> /home/ikun/ros2_ws/install/pcdet_ros2/share/pcdet_ros2/cfgs/kitti_models
+[0.623s] copying cfgs/kitti_models/pointpillar_pyramid_aug.yaml -> /home/ikun/ros2_ws/install/pcdet_ros2/share/pcdet_ros2/cfgs/kitti_models
+[0.623s] copying cfgs/kitti_models/second_iou.yaml -> /home/ikun/ros2_ws/install/pcdet_ros2/share/pcdet_ros2/cfgs/kitti_models
+[0.623s] copying cfgs/kitti_models/CaDDN.yaml -> /home/ikun/ros2_ws/install/pcdet_ros2/share/pcdet_ros2/cfgs/kitti_models
+[0.623s] copying cfgs/kitti_models/pv_rcnn.yaml -> /home/ikun/ros2_ws/install/pcdet_ros2/share/pcdet_ros2/cfgs/kitti_models
+[0.623s] copying cfgs/kitti_models/voxel_rcnn_car.yaml -> /home/ikun/ros2_ws/install/pcdet_ros2/share/pcdet_ros2/cfgs/kitti_models
+[0.623s] copying cfgs/kitti_models/PartA2_free.yaml -> /home/ikun/ros2_ws/install/pcdet_ros2/share/pcdet_ros2/cfgs/kitti_models
+[0.623s] copying cfgs/kitti_models/pointpillar_newaugs.yaml -> /home/ikun/ros2_ws/install/pcdet_ros2/share/pcdet_ros2/cfgs/kitti_models
+[0.623s] copying cfgs/kitti_models/pointpillar.yaml -> /home/ikun/ros2_ws/install/pcdet_ros2/share/pcdet_ros2/cfgs/kitti_models
+[0.623s] copying cfgs/kitti_models/pillarnet.yaml -> /home/ikun/ros2_ws/install/pcdet_ros2/share/pcdet_ros2/cfgs/kitti_models
+[0.623s] creating /home/ikun/ros2_ws/install/pcdet_ros2/share/pcdet_ros2/cfgs/lyft_models
+[0.623s] copying cfgs/lyft_models/cbgs_second-nores_multihead.yaml -> /home/ikun/ros2_ws/install/pcdet_ros2/share/pcdet_ros2/cfgs/lyft_models
+[0.623s] copying cfgs/lyft_models/cbgs_second_multihead.yaml -> /home/ikun/ros2_ws/install/pcdet_ros2/share/pcdet_ros2/cfgs/lyft_models
+[0.623s] creating /home/ikun/ros2_ws/install/pcdet_ros2/share/pcdet_ros2/cfgs/nuscenes_models
+[0.623s] copying cfgs/nuscenes_models/cbgs_voxel0075_res3d_centerpoint.yaml -> /home/ikun/ros2_ws/install/pcdet_ros2/share/pcdet_ros2/cfgs/nuscenes_models
+[0.623s] copying cfgs/nuscenes_models/cbgs_second_multihead.yaml -> /home/ikun/ros2_ws/install/pcdet_ros2/share/pcdet_ros2/cfgs/nuscenes_models
+[0.623s] copying cfgs/nuscenes_models/cbgs_pp_multihead.yaml -> /home/ikun/ros2_ws/install/pcdet_ros2/share/pcdet_ros2/cfgs/nuscenes_models
+[0.623s] copying cfgs/nuscenes_models/cbgs_dyn_pp_centerpoint.yaml -> /home/ikun/ros2_ws/install/pcdet_ros2/share/pcdet_ros2/cfgs/nuscenes_models
+[0.623s] copying cfgs/nuscenes_models/cbgs_pillar0075_res2d_centerpoint.yaml -> /home/ikun/ros2_ws/install/pcdet_ros2/share/pcdet_ros2/cfgs/nuscenes_models
+[0.623s] copying cfgs/nuscenes_models/cbgs_voxel01_res3d_centerpoint.yaml -> /home/ikun/ros2_ws/install/pcdet_ros2/share/pcdet_ros2/cfgs/nuscenes_models
+[0.623s] creating /home/ikun/ros2_ws/install/pcdet_ros2/share/pcdet_ros2/cfgs/once_models
+[0.623s] copying cfgs/once_models/second.yaml -> /home/ikun/ros2_ws/install/pcdet_ros2/share/pcdet_ros2/cfgs/once_models
+[0.623s] copying cfgs/once_models/pointrcnn.yaml -> /home/ikun/ros2_ws/install/pcdet_ros2/share/pcdet_ros2/cfgs/once_models
+[0.624s] copying cfgs/once_models/pv_rcnn.yaml -> /home/ikun/ros2_ws/install/pcdet_ros2/share/pcdet_ros2/cfgs/once_models
+[0.624s] copying cfgs/once_models/centerpoint.yaml -> /home/ikun/ros2_ws/install/pcdet_ros2/share/pcdet_ros2/cfgs/once_models
+[0.624s] copying cfgs/once_models/pointpillar.yaml -> /home/ikun/ros2_ws/install/pcdet_ros2/share/pcdet_ros2/cfgs/once_models
+[0.624s] creating /home/ikun/ros2_ws/install/pcdet_ros2/share/pcdet_ros2/cfgs/waymo_models
+[0.624s] copying cfgs/waymo_models/pv_rcnn_with_centerhead_rpn.yaml -> /home/ikun/ros2_ws/install/pcdet_ros2/share/pcdet_ros2/cfgs/waymo_models
+[0.624s] copying cfgs/waymo_models/second.yaml -> /home/ikun/ros2_ws/install/pcdet_ros2/share/pcdet_ros2/cfgs/waymo_models
+[0.624s] copying cfgs/waymo_models/PartA2.yaml -> /home/ikun/ros2_ws/install/pcdet_ros2/share/pcdet_ros2/cfgs/waymo_models
+[0.624s] copying cfgs/waymo_models/pv_rcnn_plusplus_resnet_2frames.yaml -> /home/ikun/ros2_ws/install/pcdet_ros2/share/pcdet_ros2/cfgs/waymo_models
+[0.624s] copying cfgs/waymo_models/mppnet_e2e_memorybank_inference.yaml -> /home/ikun/ros2_ws/install/pcdet_ros2/share/pcdet_ros2/cfgs/waymo_models
+[0.624s] copying cfgs/waymo_models/mppnet_4frames.yaml -> /home/ikun/ros2_ws/install/pcdet_ros2/share/pcdet_ros2/cfgs/waymo_models
+[0.624s] copying cfgs/waymo_models/pv_rcnn.yaml -> /home/ikun/ros2_ws/install/pcdet_ros2/share/pcdet_ros2/cfgs/waymo_models
+[0.624s] copying cfgs/waymo_models/centerpoint_without_resnet.yaml -> /home/ikun/ros2_ws/install/pcdet_ros2/share/pcdet_ros2/cfgs/waymo_models
+[0.624s] copying cfgs/waymo_models/pv_rcnn_plusplus_resnet.yaml -> /home/ikun/ros2_ws/install/pcdet_ros2/share/pcdet_ros2/cfgs/waymo_models
+[0.624s] copying cfgs/waymo_models/centerpoint_dyn_pillar_1x.yaml -> /home/ikun/ros2_ws/install/pcdet_ros2/share/pcdet_ros2/cfgs/waymo_models
+[0.624s] copying cfgs/waymo_models/voxel_rcnn_with_centerhead_dyn_voxel.yaml -> /home/ikun/ros2_ws/install/pcdet_ros2/share/pcdet_ros2/cfgs/waymo_models
+[0.624s] copying cfgs/waymo_models/pv_rcnn_plusplus.yaml -> /home/ikun/ros2_ws/install/pcdet_ros2/share/pcdet_ros2/cfgs/waymo_models
+[0.624s] copying cfgs/waymo_models/pointpillar_1x.yaml -> /home/ikun/ros2_ws/install/pcdet_ros2/share/pcdet_ros2/cfgs/waymo_models
+[0.624s] copying cfgs/waymo_models/mppnet_16frames.yaml -> /home/ikun/ros2_ws/install/pcdet_ros2/share/pcdet_ros2/cfgs/waymo_models
+[0.624s] copying cfgs/waymo_models/centerpoint.yaml -> /home/ikun/ros2_ws/install/pcdet_ros2/share/pcdet_ros2/cfgs/waymo_models
+[0.624s] copying cfgs/waymo_models/centerpoint_pillar_1x.yaml -> /home/ikun/ros2_ws/install/pcdet_ros2/share/pcdet_ros2/cfgs/waymo_models
+[0.624s] copying cfgs/waymo_models/centerpoint_4frames.yaml -> /home/ikun/ros2_ws/install/pcdet_ros2/share/pcdet_ros2/cfgs/waymo_models
+[0.624s] copying cfgs/waymo_models/pillarnet.yaml -> /home/ikun/ros2_ws/install/pcdet_ros2/share/pcdet_ros2/cfgs/waymo_models
+[0.624s] creating /home/ikun/ros2_ws/install/pcdet_ros2/share/pcdet_ros2/checkpoints
+[0.624s] copying checkpoints/pv_rcnn_8369.pth -> /home/ikun/ros2_ws/install/pcdet_ros2/share/pcdet_ros2/checkpoints
+[0.646s] running install_egg_info
+[0.648s] Copying ../../build/pcdet_ros2/pcdet_ros2.egg-info to /home/ikun/ros2_ws/install/pcdet_ros2/lib/python3.10/site-packages/pcdet_ros2-0.0.1-py3.10.egg-info
+[0.648s] running install_scripts
+[0.661s] Installing pcdet script to /home/ikun/ros2_ws/install/pcdet_ros2/lib/pcdet_ros2
+[0.661s] Installing simple_pcd_pub script to /home/ikun/ros2_ws/install/pcdet_ros2/lib/pcdet_ros2
+[0.661s] writing list of installed files to '/home/ikun/ros2_ws/build/pcdet_ros2/install.log'
+[0.678s] Invoked command in '/home/ikun/ros2_ws/src/pcdet_ros2' returned '0': PYTHONPATH=/home/ikun/ros2_ws/build/pcdet_ros2/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/ikun/ros2_ws/install/pcdet_ros2/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/pcdet_ros2 build --build-base /home/ikun/ros2_ws/build/pcdet_ros2/build install --record /home/ikun/ros2_ws/build/pcdet_ros2/install.log --single-version-externally-managed install_data

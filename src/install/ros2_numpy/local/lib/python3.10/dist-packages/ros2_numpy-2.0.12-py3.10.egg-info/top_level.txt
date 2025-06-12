@@ -1,0 +1,1 @@
+/home/ikun/ros2_ws/src/build/ros2_numpy/ament_cmake_python/ros2_numpy/ros2_numpy.egg-info/top_level.txt

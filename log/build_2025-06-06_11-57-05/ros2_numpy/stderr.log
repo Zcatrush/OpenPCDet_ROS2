@@ -1,0 +1,4 @@
+failed to create symbolic link '/home/ikun/ros2_ws/build/ros2_numpy/ament_cmake_python/ros2_numpy/ros2_numpy' because existing path cannot be removed: Is a directory
+gmake[2]: *** [CMakeFiles/ament_cmake_python_symlink_ros2_numpy.dir/build.make:70：CMakeFiles/ament_cmake_python_symlink_ros2_numpy] 错误 1
+gmake[1]: *** [CMakeFiles/Makefile2:138：CMakeFiles/ament_cmake_python_symlink_ros2_numpy.dir/all] 错误 2
+gmake: *** [Makefile:146：all] 错误 2

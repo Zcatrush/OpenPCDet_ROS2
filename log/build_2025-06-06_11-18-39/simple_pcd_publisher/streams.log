@@ -1,0 +1,41 @@
+[0.441s] Invoking command in '/home/ikun/ros2_ws/src/simple_pcd_publisher': PYTHONPATH=/home/ikun/ros2_ws/build/simple_pcd_publisher/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/ikun/ros2_ws/install/simple_pcd_publisher/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/simple_pcd_publisher build --build-base /home/ikun/ros2_ws/build/simple_pcd_publisher/build install --record /home/ikun/ros2_ws/build/simple_pcd_publisher/install.log --single-version-externally-managed install_data
+[0.601s] running egg_info
+[0.601s] creating ../../build/simple_pcd_publisher/simple_pcd_publisher.egg-info
+[0.602s] writing ../../build/simple_pcd_publisher/simple_pcd_publisher.egg-info/PKG-INFO
+[0.602s] writing dependency_links to ../../build/simple_pcd_publisher/simple_pcd_publisher.egg-info/dependency_links.txt
+[0.602s] writing entry points to ../../build/simple_pcd_publisher/simple_pcd_publisher.egg-info/entry_points.txt
+[0.602s] writing requirements to ../../build/simple_pcd_publisher/simple_pcd_publisher.egg-info/requires.txt
+[0.602s] writing top-level names to ../../build/simple_pcd_publisher/simple_pcd_publisher.egg-info/top_level.txt
+[0.602s] writing manifest file '../../build/simple_pcd_publisher/simple_pcd_publisher.egg-info/SOURCES.txt'
+[0.603s] reading manifest file '../../build/simple_pcd_publisher/simple_pcd_publisher.egg-info/SOURCES.txt'
+[0.603s] writing manifest file '../../build/simple_pcd_publisher/simple_pcd_publisher.egg-info/SOURCES.txt'
+[0.603s] running build
+[0.603s] running build_py
+[0.603s] creating /home/ikun/ros2_ws/build/simple_pcd_publisher/build
+[0.603s] creating /home/ikun/ros2_ws/build/simple_pcd_publisher/build/lib
+[0.603s] creating /home/ikun/ros2_ws/build/simple_pcd_publisher/build/lib/simple_pcd_publisher
+[0.603s] copying simple_pcd_publisher/detection_visualizer.py -> /home/ikun/ros2_ws/build/simple_pcd_publisher/build/lib/simple_pcd_publisher
+[0.604s] copying simple_pcd_publisher/publisher_node.py -> /home/ikun/ros2_ws/build/simple_pcd_publisher/build/lib/simple_pcd_publisher
+[0.604s] copying simple_pcd_publisher/__init__.py -> /home/ikun/ros2_ws/build/simple_pcd_publisher/build/lib/simple_pcd_publisher
+[0.604s] running install
+[0.604s] running install_lib
+[0.604s] creating /home/ikun/ros2_ws/install/simple_pcd_publisher/lib/python3.10/site-packages/simple_pcd_publisher
+[0.604s] copying /home/ikun/ros2_ws/build/simple_pcd_publisher/build/lib/simple_pcd_publisher/detection_visualizer.py -> /home/ikun/ros2_ws/install/simple_pcd_publisher/lib/python3.10/site-packages/simple_pcd_publisher
+[0.604s] copying /home/ikun/ros2_ws/build/simple_pcd_publisher/build/lib/simple_pcd_publisher/publisher_node.py -> /home/ikun/ros2_ws/install/simple_pcd_publisher/lib/python3.10/site-packages/simple_pcd_publisher
+[0.604s] copying /home/ikun/ros2_ws/build/simple_pcd_publisher/build/lib/simple_pcd_publisher/__init__.py -> /home/ikun/ros2_ws/install/simple_pcd_publisher/lib/python3.10/site-packages/simple_pcd_publisher
+[0.605s] byte-compiling /home/ikun/ros2_ws/install/simple_pcd_publisher/lib/python3.10/site-packages/simple_pcd_publisher/detection_visualizer.py to detection_visualizer.cpython-310.pyc
+[0.605s] byte-compiling /home/ikun/ros2_ws/install/simple_pcd_publisher/lib/python3.10/site-packages/simple_pcd_publisher/publisher_node.py to publisher_node.cpython-310.pyc
+[0.605s] byte-compiling /home/ikun/ros2_ws/install/simple_pcd_publisher/lib/python3.10/site-packages/simple_pcd_publisher/__init__.py to __init__.cpython-310.pyc
+[0.606s] running install_data
+[0.606s] creating /home/ikun/ros2_ws/install/simple_pcd_publisher/share/ament_index
+[0.606s] creating /home/ikun/ros2_ws/install/simple_pcd_publisher/share/ament_index/resource_index
+[0.606s] creating /home/ikun/ros2_ws/install/simple_pcd_publisher/share/ament_index/resource_index/packages
+[0.606s] copying resource/simple_pcd_publisher -> /home/ikun/ros2_ws/install/simple_pcd_publisher/share/ament_index/resource_index/packages
+[0.606s] copying package.xml -> /home/ikun/ros2_ws/install/simple_pcd_publisher/share/simple_pcd_publisher
+[0.606s] running install_egg_info
+[0.607s] Copying ../../build/simple_pcd_publisher/simple_pcd_publisher.egg-info to /home/ikun/ros2_ws/install/simple_pcd_publisher/lib/python3.10/site-packages/simple_pcd_publisher-0.0.0-py3.10.egg-info
+[0.607s] running install_scripts
+[0.620s] Installing detection_visualizer script to /home/ikun/ros2_ws/install/simple_pcd_publisher/lib/simple_pcd_publisher
+[0.620s] Installing kitti_pointcloud_publisher script to /home/ikun/ros2_ws/install/simple_pcd_publisher/lib/simple_pcd_publisher
+[0.620s] writing list of installed files to '/home/ikun/ros2_ws/build/simple_pcd_publisher/install.log'
+[0.636s] Invoked command in '/home/ikun/ros2_ws/src/simple_pcd_publisher' returned '0': PYTHONPATH=/home/ikun/ros2_ws/build/simple_pcd_publisher/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/ikun/ros2_ws/install/simple_pcd_publisher/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/simple_pcd_publisher build --build-base /home/ikun/ros2_ws/build/simple_pcd_publisher/build install --record /home/ikun/ros2_ws/build/simple_pcd_publisher/install.log --single-version-externally-managed install_data

@@ -1,0 +1,18 @@
+[0.452s] Invoking command in '/home/ikun/ros2_ws/src/build/simple_pcd_publisher': PYTHONPATH=/home/ikun/ros2_ws/src/build/simple_pcd_publisher/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/ikun/ros2_ws/src/install/simple_pcd_publisher/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/ikun/ros2_ws/src/build/simple_pcd_publisher/build --no-deps symlink_data
+[0.636s] running develop
+[0.751s] running egg_info
+[0.751s] writing simple_pcd_publisher.egg-info/PKG-INFO
+[0.751s] writing dependency_links to simple_pcd_publisher.egg-info/dependency_links.txt
+[0.751s] writing entry points to simple_pcd_publisher.egg-info/entry_points.txt
+[0.751s] writing requirements to simple_pcd_publisher.egg-info/requires.txt
+[0.751s] writing top-level names to simple_pcd_publisher.egg-info/top_level.txt
+[0.752s] reading manifest file 'simple_pcd_publisher.egg-info/SOURCES.txt'
+[0.752s] writing manifest file 'simple_pcd_publisher.egg-info/SOURCES.txt'
+[0.753s] running build_ext
+[0.753s] Creating /home/ikun/ros2_ws/src/install/simple_pcd_publisher/lib/python3.10/site-packages/simple-pcd-publisher.egg-link (link to .)
+[0.754s] Installing detection_visualizer script to /home/ikun/ros2_ws/src/install/simple_pcd_publisher/lib/simple_pcd_publisher
+[0.754s] Installing kitti_pointcloud_publisher script to /home/ikun/ros2_ws/src/install/simple_pcd_publisher/lib/simple_pcd_publisher
+[0.754s] 
+[0.754s] Installed /home/ikun/ros2_ws/src/build/simple_pcd_publisher
+[0.754s] running symlink_data
+[0.772s] Invoked command in '/home/ikun/ros2_ws/src/build/simple_pcd_publisher' returned '0': PYTHONPATH=/home/ikun/ros2_ws/src/build/simple_pcd_publisher/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/ikun/ros2_ws/src/install/simple_pcd_publisher/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/ikun/ros2_ws/src/build/simple_pcd_publisher/build --no-deps symlink_data
