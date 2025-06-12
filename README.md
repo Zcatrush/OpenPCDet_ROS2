@@ -10,15 +10,11 @@
 # **使用方法**
 构建：
 ```
-# GOTO the ros 2 workspace
-cd src/
-git clone https://github.com/Box-Robotics/ros2_numpy -b humble
+cd ~/ros2_ws
 python3 -m pip install catkin_pkg
 sudo apt install ros-humble-ament-cmake-nose -y
 python3 -m pip install nose
 python3 -m pip install transform3d
-git clone https://github.com/pradhanshrijal/pcdet_ros2
-cd ..
 rosdep install -i --from-path src --rosdistro humble -y
 rm -rf build install log
 colcon build --symlink-install --packages-select ros2_numpy pcdet_ros2 simple_pcd_publisher
