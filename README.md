@@ -23,7 +23,7 @@ rm -rf build install log
 colcon build --symlink-install --packages-select ros2_numpy pcdet_ros2 simple_pcd_publisher
 
 ```
-环境配置完成之后执行：
+构建完成之后执行：
 ```
 #新建终端
 cd ~/ros2_ws
