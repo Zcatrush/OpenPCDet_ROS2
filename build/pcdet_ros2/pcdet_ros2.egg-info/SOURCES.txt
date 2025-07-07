@@ -57,9 +57,12 @@ cfgs/waymo_models/pv_rcnn_plusplus_resnet_2frames.yaml
 cfgs/waymo_models/pv_rcnn_with_centerhead_rpn.yaml
 cfgs/waymo_models/second.yaml
 cfgs/waymo_models/voxel_rcnn_with_centerhead_dyn_voxel.yaml
+checkpoints/pointpillar_7728.pth
+checkpoints/pointpillar_7728.pth:Zone.Identifier
 checkpoints/pv_rcnn_8369.pth
 config/cbgs_second_multihead_nds.param.yaml
 config/parta2_free.param.yaml
+config/pcdet_pointpillar.param.yaml
 config/pcdet_pvrcnn.param.yaml
 config/pp_multihead_nds.param.yaml
 launch/parta2_free.launch.xml

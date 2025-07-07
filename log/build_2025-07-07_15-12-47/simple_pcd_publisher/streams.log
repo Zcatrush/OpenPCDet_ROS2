@@ -1,0 +1,25 @@
+[0.404s] Invoking command in '/home/ikun/OpenPCDet_ROS2/build/simple_pcd_publisher': PYTHONPATH=/home/ikun/OpenPCDet_ROS2/build/simple_pcd_publisher/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/ikun/OpenPCDet_ROS2/install/simple_pcd_publisher/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/ikun/OpenPCDet_ROS2/build/simple_pcd_publisher/build --no-deps symlink_data
+[0.539s] running develop
+[0.621s] running egg_info
+[0.621s] creating simple_pcd_publisher.egg-info
+[0.621s] writing simple_pcd_publisher.egg-info/PKG-INFO
+[0.622s] writing dependency_links to simple_pcd_publisher.egg-info/dependency_links.txt
+[0.622s] writing entry points to simple_pcd_publisher.egg-info/entry_points.txt
+[0.622s] writing requirements to simple_pcd_publisher.egg-info/requires.txt
+[0.622s] writing top-level names to simple_pcd_publisher.egg-info/top_level.txt
+[0.622s] writing manifest file 'simple_pcd_publisher.egg-info/SOURCES.txt'
+[0.623s] reading manifest file 'simple_pcd_publisher.egg-info/SOURCES.txt'
+[0.623s] writing manifest file 'simple_pcd_publisher.egg-info/SOURCES.txt'
+[0.624s] running build_ext
+[0.624s] Creating /home/ikun/OpenPCDet_ROS2/install/simple_pcd_publisher/lib/python3.10/site-packages/simple-pcd-publisher.egg-link (link to .)
+[0.624s] Installing detection_visualizer script to /home/ikun/OpenPCDet_ROS2/install/simple_pcd_publisher/lib/simple_pcd_publisher
+[0.625s] Installing pointcloud_publisher script to /home/ikun/OpenPCDet_ROS2/install/simple_pcd_publisher/lib/simple_pcd_publisher
+[0.625s] 
+[0.625s] Installed /home/ikun/OpenPCDet_ROS2/build/simple_pcd_publisher
+[0.625s] running symlink_data
+[0.625s] creating /home/ikun/OpenPCDet_ROS2/install/simple_pcd_publisher/share/ament_index
+[0.625s] creating /home/ikun/OpenPCDet_ROS2/install/simple_pcd_publisher/share/ament_index/resource_index
+[0.625s] creating /home/ikun/OpenPCDet_ROS2/install/simple_pcd_publisher/share/ament_index/resource_index/packages
+[0.625s] symbolically linking /home/ikun/OpenPCDet_ROS2/build/simple_pcd_publisher/resource/simple_pcd_publisher -> /home/ikun/OpenPCDet_ROS2/install/simple_pcd_publisher/share/ament_index/resource_index/packages
+[0.625s] symbolically linking /home/ikun/OpenPCDet_ROS2/build/simple_pcd_publisher/package.xml -> /home/ikun/OpenPCDet_ROS2/install/simple_pcd_publisher/share/simple_pcd_publisher
+[0.640s] Invoked command in '/home/ikun/OpenPCDet_ROS2/build/simple_pcd_publisher' returned '0': PYTHONPATH=/home/ikun/OpenPCDet_ROS2/build/simple_pcd_publisher/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/ikun/OpenPCDet_ROS2/install/simple_pcd_publisher/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/ikun/OpenPCDet_ROS2/build/simple_pcd_publisher/build --no-deps symlink_data
