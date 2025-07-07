@@ -1,1 +1,1 @@
-prepend-non-duplicate;PYTHONPATH;/home/ikun/ros2_ws/build/simple_pcd_publisher
+prepend-non-duplicate;PYTHONPATH;/home/ikun/OpenPCDet_ROS2/build/simple_pcd_publisher

@@ -98,13 +98,13 @@
 		{
 			"backtrace" : 9,
 			"isGenerated" : true,
-			"path" : "/home/ikun/ros2_ws/build/ros2_numpy/CMakeFiles/ros2_numpy_uninstall",
+			"path" : "/home/ikun/OpenPCDet_ROS2/build/ros2_numpy/CMakeFiles/ros2_numpy_uninstall",
 			"sourceGroupIndex" : 0
 		},
 		{
 			"backtrace" : 0,
 			"isGenerated" : true,
-			"path" : "/home/ikun/ros2_ws/build/ros2_numpy/CMakeFiles/ros2_numpy_uninstall.rule",
+			"path" : "/home/ikun/OpenPCDet_ROS2/build/ros2_numpy/CMakeFiles/ros2_numpy_uninstall.rule",
 			"sourceGroupIndex" : 1
 		}
 	],

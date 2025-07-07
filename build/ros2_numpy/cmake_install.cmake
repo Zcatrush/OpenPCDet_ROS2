@@ -1,8 +1,8 @@
-# Install script for directory: /home/ikun/ros2_ws/src/ros2_numpy
+# Install script for directory: /home/ikun/OpenPCDet_ROS2/src/ros2_numpy
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
-  set(CMAKE_INSTALL_PREFIX "/home/ikun/ros2_ws/install/ros2_numpy")
+  set(CMAKE_INSTALL_PREFIX "/home/ikun/OpenPCDet_ROS2/install/ros2_numpy")
 endif()
 string(REGEX REPLACE "/$" "" CMAKE_INSTALL_PREFIX "${CMAKE_INSTALL_PREFIX}")
 
@@ -43,14 +43,14 @@ if(NOT DEFINED CMAKE_OBJDUMP)
 endif()
 
 if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
-  include("/home/ikun/ros2_ws/build/ros2_numpy/ament_cmake_symlink_install/ament_cmake_symlink_install.cmake")
+  include("/home/ikun/OpenPCDet_ROS2/build/ros2_numpy/ament_cmake_symlink_install/ament_cmake_symlink_install.cmake")
 endif()
 
 if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
   execute_process(
         COMMAND
         "/usr/bin/python3" "-m" "compileall"
-        "/home/ikun/ros2_ws/install/ros2_numpy/local/lib/python3.10/dist-packages/ros2_numpy"
+        "/home/ikun/OpenPCDet_ROS2/install/ros2_numpy/local/lib/python3.10/dist-packages/ros2_numpy"
       )
 endif()
 
@@ -62,5 +62,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "/home/ikun/ros2_ws/build/ros2_numpy/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "/home/ikun/OpenPCDet_ROS2/build/ros2_numpy/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")

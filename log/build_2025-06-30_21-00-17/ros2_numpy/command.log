@@ -1,0 +1,6 @@
+Invoking command in '/home/ikun/OpenPCDet_ROS2/build/ros2_numpy': CMAKE_PREFIX_PATH=/opt/ros/humble /home/ikun/.local/bin/cmake /home/ikun/OpenPCDet_ROS2/src/ros2_numpy -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/ikun/OpenPCDet_ROS2/install/ros2_numpy
+Invoked command in '/home/ikun/OpenPCDet_ROS2/build/ros2_numpy' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /home/ikun/.local/bin/cmake /home/ikun/OpenPCDet_ROS2/src/ros2_numpy -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/ikun/OpenPCDet_ROS2/install/ros2_numpy
+Invoking command in '/home/ikun/OpenPCDet_ROS2/build/ros2_numpy': CMAKE_PREFIX_PATH=/opt/ros/humble /home/ikun/.local/bin/cmake --build /home/ikun/OpenPCDet_ROS2/build/ros2_numpy -- -j20 -l20
+Invoked command in '/home/ikun/OpenPCDet_ROS2/build/ros2_numpy' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /home/ikun/.local/bin/cmake --build /home/ikun/OpenPCDet_ROS2/build/ros2_numpy -- -j20 -l20
+Invoking command in '/home/ikun/OpenPCDet_ROS2/build/ros2_numpy': CMAKE_PREFIX_PATH=/opt/ros/humble /home/ikun/.local/bin/cmake --install /home/ikun/OpenPCDet_ROS2/build/ros2_numpy
+Invoked command in '/home/ikun/OpenPCDet_ROS2/build/ros2_numpy' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /home/ikun/.local/bin/cmake --install /home/ikun/OpenPCDet_ROS2/build/ros2_numpy

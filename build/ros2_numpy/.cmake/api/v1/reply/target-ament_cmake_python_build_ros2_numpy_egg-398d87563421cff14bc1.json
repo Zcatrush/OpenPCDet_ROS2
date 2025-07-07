@@ -73,13 +73,13 @@
 		{
 			"backtrace" : 3,
 			"isGenerated" : true,
-			"path" : "/home/ikun/ros2_ws/build/ros2_numpy/CMakeFiles/ament_cmake_python_build_ros2_numpy_egg",
+			"path" : "/home/ikun/OpenPCDet_ROS2/build/ros2_numpy/CMakeFiles/ament_cmake_python_build_ros2_numpy_egg",
 			"sourceGroupIndex" : 0
 		},
 		{
 			"backtrace" : 0,
 			"isGenerated" : true,
-			"path" : "/home/ikun/ros2_ws/build/ros2_numpy/CMakeFiles/ament_cmake_python_build_ros2_numpy_egg.rule",
+			"path" : "/home/ikun/OpenPCDet_ROS2/build/ros2_numpy/CMakeFiles/ament_cmake_python_build_ros2_numpy_egg.rule",
 			"sourceGroupIndex" : 1
 		}
 	],

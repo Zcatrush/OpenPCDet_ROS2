@@ -67,13 +67,13 @@
 		{
 			"backtrace" : 3,
 			"isGenerated" : true,
-			"path" : "/home/ikun/ros2_ws/build/ros2_numpy/CMakeFiles/ament_cmake_python_symlink_ros2_numpy",
+			"path" : "/home/ikun/OpenPCDet_ROS2/build/ros2_numpy/CMakeFiles/ament_cmake_python_symlink_ros2_numpy",
 			"sourceGroupIndex" : 0
 		},
 		{
 			"backtrace" : 0,
 			"isGenerated" : true,
-			"path" : "/home/ikun/ros2_ws/build/ros2_numpy/CMakeFiles/ament_cmake_python_symlink_ros2_numpy.rule",
+			"path" : "/home/ikun/OpenPCDet_ROS2/build/ros2_numpy/CMakeFiles/ament_cmake_python_symlink_ros2_numpy.rule",
 			"sourceGroupIndex" : 1
 		}
 	],
