@@ -1,19 +1,16 @@
 import os
 
 from ament_index_python.packages import get_package_share_directory
-
 from launch import LaunchDescription
-from launch.actions import DeclareLaunchArgument, GroupAction, SetEnvironmentVariable
-from launch.conditions import IfCondition
-from launch.substitutions import LaunchConfiguration, PythonExpression
+from launch.actions import DeclareLaunchArgument, GroupAction
 from launch_ros.actions import Node
+from launch.substitutions import LaunchConfiguration
 from nav2_common.launch import RewrittenYaml
 
 def generate_launch_description():
     package_name = 'pcdet_ros2'
     package_dir = get_package_share_directory(package_name)
     config_file = 'pcdet_pointpillar.param.yaml'
-    ##config_file = 'pcdet_pvrcnn.param.yaml'
     namespace = LaunchConfiguration('namespace')
     params_file = LaunchConfiguration('params_file')
     input_topic = LaunchConfiguration('input_topic')
@@ -38,16 +35,17 @@ def generate_launch_description():
 
     declare_input_topic_cmd = DeclareLaunchArgument(
         'input_topic',
-        default_value='/point_cloud',
+        default_value='/point_cloud',  # 输入点云话题
         description='Input Point Cloud'
     )
 
     declare_output_topic_cmd = DeclareLaunchArgument(
         'output_topic',
-        default_value='cloud_detections',
+        default_value='/cloud_detections',  # 目标检测的输出话题
         description='Output Object Detections'
     )
 
+    # pcdet node (目标检测节点)
     pcdet = Node(
         package=package_name,
         executable='pcdet',
@@ -55,16 +53,47 @@ def generate_launch_description():
         output='screen',
         parameters=[configured_params,
                     {'package_folder_path': package_dir}],
-        remappings=[("input", input_topic), 
-                    ("output", output_topic)]            
+        remappings=[("input", input_topic),  # pcdet 接收点云数据
+                    ("output", output_topic)]  # pcdet 发布目标检测结果
     )
 
+    # pointcloud_publisher node (点云发布节点)
+    pointcloud_publisher = Node(
+        package='simple_pcd_publisher',
+        executable='pointcloud_publisher',
+        name='pointcloud_publisher',
+        output='screen',
+        parameters=[{
+            'input_topic': input_topic  # 点云发布到 /point_cloud
+        }]
+    )
+
+    # detection_visualizer node (目标检测可视化节点)
+    detection_visualizer = Node(
+        package='simple_pcd_publisher',
+        executable='detection_visualizer',
+        name='detection_visualizer',
+        output='screen',
+        parameters=[{
+            'input_topic': output_topic,  # detection_visualizer 订阅 /cloud_detections
+            'output_topic': '/detection_markers'  # 发布可视化结果到 /detection_markers
+        }]
+    )
+
+    # 使用 GroupAction 来并行启动节点
     ld = LaunchDescription()
 
-    ld.add_action(declare_namespace_cmd)
-    ld.add_action(declare_params_file_cmd)
-    ld.add_action(declare_input_topic_cmd)
-    ld.add_action(declare_output_topic_cmd)
-    ld.add_action(pcdet)
+    # 将所有节点添加到 GroupAction 中，确保它们并行启动
+    group_action = GroupAction([
+        declare_namespace_cmd,
+        declare_params_file_cmd,
+        declare_input_topic_cmd,
+        declare_output_topic_cmd,
+        pcdet,
+        pointcloud_publisher,
+        detection_visualizer
+    ])
+
+    ld.add_action(group_action)
 
     return ld
