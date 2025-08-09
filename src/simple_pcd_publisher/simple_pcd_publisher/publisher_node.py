@@ -1,7 +1,6 @@
 import rclpy
 from rclpy.node import Node
 from sensor_msgs.msg import PointCloud2, PointField
-import struct
 import numpy as np
 from std_msgs.msg import Header
 
@@ -9,7 +8,7 @@ class PointCloudPublisher(Node):
     def __init__(self):
         super().__init__('pointcloud_publisher')
         self.publisher_ = self.create_publisher(PointCloud2, '/point_cloud', 10)
-        self.timer = self.create_timer(1.0, self.timer_callback)  # 1秒发一次
+        self.timer = self.create_timer(5, self.timer_callback)  # 发送频率
         self.file_index = 0
         self.files = sorted(self.get_files('/home/ikun/OpenPCDet/data/kitti/training/velodyne'))
         self.get_logger().info(f'Found {len(self.files)} pointcloud files.')
@@ -23,7 +22,9 @@ class PointCloudPublisher(Node):
             self.file_index = 0  # 循环播放
         file_path = self.files[self.file_index]
         points = self.read_bin_file(file_path)
-        pc2_msg = self.create_pointcloud2(points)
+        current_time = self.get_clock().now().to_msg()  # 获取当前时间戳
+        pc2_msg = self.create_pointcloud2(points, current_time)  # 将时间戳传入
+
         self.publisher_.publish(pc2_msg)
         self.get_logger().info(f'Publishing {file_path}')
         self.file_index += 1
@@ -32,10 +33,10 @@ class PointCloudPublisher(Node):
         points = np.fromfile(filename, dtype=np.float32).reshape(-1, 4)
         return points[:, :3]  # 只取xyz，丢掉反射强度
 
-    def create_pointcloud2(self, points):
+    def create_pointcloud2(self, points, timestamp):
         msg = PointCloud2()
         msg.header = Header()
-        msg.header.stamp = self.get_clock().now().to_msg()
+        msg.header.stamp = timestamp  # 设置传入的时间戳
         msg.header.frame_id = 'velodyne'  # 根据你的TF调整
 
         msg.height = 1
@@ -63,4 +64,3 @@ def main(args=None):
 
 if __name__ == '__main__':
     main()
-

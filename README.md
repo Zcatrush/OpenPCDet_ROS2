@@ -8,7 +8,7 @@
   - 官方项目：https://github.com/open-mmlab/OpenPCDet.git
   - 安装参考：https://zhuanlan.zhihu.com/p/663973630
 # **使用方法**
-构建：
+环境配置：
 ```
 cd ~/OpenPCDet_ROS2
 python3 -m pip install catkin_pkg
@@ -16,14 +16,15 @@ sudo apt install ros-humble-ament-cmake-nose -y
 python3 -m pip install nose
 python3 -m pip install transform3d
 rosdep install -i --from-path src --rosdistro humble -y
+
+```
+构建：
+```
 rm -rf build install log
 colcon build --symlink-install --packages-select ros2_numpy pcdet_ros2 simple_pcd_publisher
-
 ```
-构建完成之后执行：
-
+运行：
 ```
-#新建终端
 cd ~/OpenPCDet_ROS2
 source install/setup.bash
 ros2 launch pcdet_ros2 pcdet.launch.py
