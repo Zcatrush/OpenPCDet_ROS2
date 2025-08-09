@@ -1,0 +1,82 @@
+[0.012s] Invoking command in '/home/ikun/OpenPCDet_ROS2/build/ros2_numpy': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/ikun/OpenPCDet_ROS2/install/simple_pcd_publisher:/home/ikun/OpenPCDet_ROS2/install/pcdet_ros2:/opt/ros/humble /home/ikun/.local/bin/cmake /home/ikun/OpenPCDet_ROS2/src/ros2_numpy -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/ikun/OpenPCDet_ROS2/install/ros2_numpy
+[0.196s] -- The C compiler identification is GNU 11.4.0
+[0.368s] -- The CXX compiler identification is GNU 11.4.0
+[0.455s] -- Detecting C compiler ABI info
+[0.526s] -- Detecting C compiler ABI info - done
+[0.532s] -- Check for working C compiler: /usr/bin/cc - skipped
+[0.533s] -- Detecting C compile features
+[0.533s] -- Detecting C compile features - done
+[0.537s] -- Detecting CXX compiler ABI info
+[0.614s] -- Detecting CXX compiler ABI info - done
+[0.620s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[0.620s] -- Detecting CXX compile features
+[0.620s] -- Detecting CXX compile features - done
+[0.636s] -- Found ament_cmake: 1.3.11 (/opt/ros/humble/share/ament_cmake/cmake)
+[0.718s] -- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter 
+[0.768s] -- Override CMake install command with custom implementation using symlinks instead of copying resources
+[0.794s] -- Found sensor_msgs: 4.9.0 (/opt/ros/humble/share/sensor_msgs/cmake)
+[0.866s] -- Found rosidl_generator_c: 3.1.6 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+[0.871s] -- Found rosidl_adapter: 3.1.6 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[0.879s] -- Found rosidl_generator_cpp: 3.1.6 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+[0.894s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.912s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.972s] -- Found nav_msgs: 4.9.0 (/opt/ros/humble/share/nav_msgs/cmake)
+[1.039s] -- Found rclpy: 3.3.16 (/opt/ros/humble/share/rclpy/cmake)
+[1.041s] -- Found ament_cmake_pytest: 1.3.11 (/opt/ros/humble/share/ament_cmake_pytest/cmake)
+[4.690s] -- Configuring done
+[4.694s] -- Generating done
+[4.696s] -- Build files have been written to: /home/ikun/OpenPCDet_ROS2/build/ros2_numpy
+[4.703s] Invoked command in '/home/ikun/OpenPCDet_ROS2/build/ros2_numpy' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/ikun/OpenPCDet_ROS2/install/simple_pcd_publisher:/home/ikun/OpenPCDet_ROS2/install/pcdet_ros2:/opt/ros/humble /home/ikun/.local/bin/cmake /home/ikun/OpenPCDet_ROS2/src/ros2_numpy -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/ikun/OpenPCDet_ROS2/install/ros2_numpy
+[4.704s] Invoking command in '/home/ikun/OpenPCDet_ROS2/build/ros2_numpy': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/ikun/OpenPCDet_ROS2/install/simple_pcd_publisher:/home/ikun/OpenPCDet_ROS2/install/pcdet_ros2:/opt/ros/humble /home/ikun/.local/bin/cmake --build /home/ikun/OpenPCDet_ROS2/build/ros2_numpy -- -j20 -l20
+[4.734s] Built target ament_cmake_python_symlink_ros2_numpy
+[4.869s] running egg_info
+[4.870s] creating ros2_numpy.egg-info
+[4.870s] writing ros2_numpy.egg-info/PKG-INFO
+[4.870s] writing dependency_links to ros2_numpy.egg-info/dependency_links.txt
+[4.870s] writing top-level names to ros2_numpy.egg-info/top_level.txt
+[4.870s] writing manifest file 'ros2_numpy.egg-info/SOURCES.txt'
+[4.872s] reading manifest file 'ros2_numpy.egg-info/SOURCES.txt'
+[4.872s] writing manifest file 'ros2_numpy.egg-info/SOURCES.txt'
+[4.886s] Built target ament_cmake_python_build_ros2_numpy_egg
+[4.892s] Invoked command in '/home/ikun/OpenPCDet_ROS2/build/ros2_numpy' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/ikun/OpenPCDet_ROS2/install/simple_pcd_publisher:/home/ikun/OpenPCDet_ROS2/install/pcdet_ros2:/opt/ros/humble /home/ikun/.local/bin/cmake --build /home/ikun/OpenPCDet_ROS2/build/ros2_numpy -- -j20 -l20
+[4.910s] Invoking command in '/home/ikun/OpenPCDet_ROS2/build/ros2_numpy': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/ikun/OpenPCDet_ROS2/install/simple_pcd_publisher:/home/ikun/OpenPCDet_ROS2/install/pcdet_ros2:/opt/ros/humble /home/ikun/.local/bin/cmake --install /home/ikun/OpenPCDet_ROS2/build/ros2_numpy
+[4.926s] -- Install configuration: ""
+[4.926s] -- Execute custom install script
+[4.926s] -- Symlinking: /home/ikun/OpenPCDet_ROS2/install/ros2_numpy/share/ros2_numpy/environment/pythonpath.sh
+[4.928s] -- Symlinking: /home/ikun/OpenPCDet_ROS2/install/ros2_numpy/share/ros2_numpy/environment/pythonpath.dsv
+[4.931s] -- Symlinking: /home/ikun/OpenPCDet_ROS2/install/ros2_numpy/local/lib/python3.10/dist-packages/ros2_numpy-2.0.12-py3.10.egg-info/PKG-INFO
+[4.932s] -- Symlinking: /home/ikun/OpenPCDet_ROS2/install/ros2_numpy/local/lib/python3.10/dist-packages/ros2_numpy-2.0.12-py3.10.egg-info/SOURCES.txt
+[4.934s] -- Symlinking: /home/ikun/OpenPCDet_ROS2/install/ros2_numpy/local/lib/python3.10/dist-packages/ros2_numpy-2.0.12-py3.10.egg-info/dependency_links.txt
+[4.936s] -- Symlinking: /home/ikun/OpenPCDet_ROS2/install/ros2_numpy/local/lib/python3.10/dist-packages/ros2_numpy-2.0.12-py3.10.egg-info/top_level.txt
+[4.938s] -- Symlinking: /home/ikun/OpenPCDet_ROS2/install/ros2_numpy/local/lib/python3.10/dist-packages/ros2_numpy/__init__.py
+[4.940s] -- Symlinking: /home/ikun/OpenPCDet_ROS2/install/ros2_numpy/local/lib/python3.10/dist-packages/ros2_numpy/geometry.py
+[4.942s] -- Symlinking: /home/ikun/OpenPCDet_ROS2/install/ros2_numpy/local/lib/python3.10/dist-packages/ros2_numpy/image.py
+[4.943s] -- Symlinking: /home/ikun/OpenPCDet_ROS2/install/ros2_numpy/local/lib/python3.10/dist-packages/ros2_numpy/laser_scan.py
+[4.945s] -- Symlinking: /home/ikun/OpenPCDet_ROS2/install/ros2_numpy/local/lib/python3.10/dist-packages/ros2_numpy/occupancy_grid.py
+[4.947s] -- Symlinking: /home/ikun/OpenPCDet_ROS2/install/ros2_numpy/local/lib/python3.10/dist-packages/ros2_numpy/point_cloud2.py
+[4.948s] -- Symlinking: /home/ikun/OpenPCDet_ROS2/install/ros2_numpy/local/lib/python3.10/dist-packages/ros2_numpy/registry.py
+[4.950s] -- Symlinking: /home/ikun/OpenPCDet_ROS2/install/ros2_numpy/share/ament_index/resource_index/package_run_dependencies/ros2_numpy
+[4.952s] -- Symlinking: /home/ikun/OpenPCDet_ROS2/install/ros2_numpy/share/ament_index/resource_index/parent_prefix_path/ros2_numpy
+[4.954s] -- Symlinking: /home/ikun/OpenPCDet_ROS2/install/ros2_numpy/share/ros2_numpy/environment/ament_prefix_path.sh
+[4.955s] -- Symlinking: /home/ikun/OpenPCDet_ROS2/install/ros2_numpy/share/ros2_numpy/environment/ament_prefix_path.dsv
+[4.957s] -- Symlinking: /home/ikun/OpenPCDet_ROS2/install/ros2_numpy/share/ros2_numpy/environment/path.sh
+[4.959s] -- Symlinking: /home/ikun/OpenPCDet_ROS2/install/ros2_numpy/share/ros2_numpy/environment/path.dsv
+[4.960s] -- Symlinking: /home/ikun/OpenPCDet_ROS2/install/ros2_numpy/share/ros2_numpy/local_setup.bash
+[4.962s] -- Symlinking: /home/ikun/OpenPCDet_ROS2/install/ros2_numpy/share/ros2_numpy/local_setup.sh
+[4.964s] -- Symlinking: /home/ikun/OpenPCDet_ROS2/install/ros2_numpy/share/ros2_numpy/local_setup.zsh
+[4.966s] -- Symlinking: /home/ikun/OpenPCDet_ROS2/install/ros2_numpy/share/ros2_numpy/local_setup.dsv
+[4.968s] -- Symlinking: /home/ikun/OpenPCDet_ROS2/install/ros2_numpy/share/ros2_numpy/package.dsv
+[4.970s] -- Symlinking: /home/ikun/OpenPCDet_ROS2/install/ros2_numpy/share/ament_index/resource_index/packages/ros2_numpy
+[4.971s] -- Symlinking: /home/ikun/OpenPCDet_ROS2/install/ros2_numpy/share/ros2_numpy/cmake/ament_cmake_export_dependencies-extras.cmake
+[4.973s] -- Symlinking: /home/ikun/OpenPCDet_ROS2/install/ros2_numpy/share/ros2_numpy/cmake/ros2_numpyConfig.cmake
+[4.975s] -- Symlinking: /home/ikun/OpenPCDet_ROS2/install/ros2_numpy/share/ros2_numpy/cmake/ros2_numpyConfig-version.cmake
+[4.977s] -- Symlinking: /home/ikun/OpenPCDet_ROS2/install/ros2_numpy/share/ros2_numpy/package.xml
+[5.004s] Listing '/home/ikun/OpenPCDet_ROS2/install/ros2_numpy/local/lib/python3.10/dist-packages/ros2_numpy'...
+[5.004s] Compiling '/home/ikun/OpenPCDet_ROS2/install/ros2_numpy/local/lib/python3.10/dist-packages/ros2_numpy/__init__.py'...
+[5.004s] Compiling '/home/ikun/OpenPCDet_ROS2/install/ros2_numpy/local/lib/python3.10/dist-packages/ros2_numpy/geometry.py'...
+[5.004s] Compiling '/home/ikun/OpenPCDet_ROS2/install/ros2_numpy/local/lib/python3.10/dist-packages/ros2_numpy/image.py'...
+[5.004s] Compiling '/home/ikun/OpenPCDet_ROS2/install/ros2_numpy/local/lib/python3.10/dist-packages/ros2_numpy/laser_scan.py'...
+[5.004s] Compiling '/home/ikun/OpenPCDet_ROS2/install/ros2_numpy/local/lib/python3.10/dist-packages/ros2_numpy/occupancy_grid.py'...
+[5.004s] Compiling '/home/ikun/OpenPCDet_ROS2/install/ros2_numpy/local/lib/python3.10/dist-packages/ros2_numpy/point_cloud2.py'...
+[5.004s] Compiling '/home/ikun/OpenPCDet_ROS2/install/ros2_numpy/local/lib/python3.10/dist-packages/ros2_numpy/registry.py'...
+[5.011s] Invoked command in '/home/ikun/OpenPCDet_ROS2/build/ros2_numpy' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/ikun/OpenPCDet_ROS2/install/simple_pcd_publisher:/home/ikun/OpenPCDet_ROS2/install/pcdet_ros2:/opt/ros/humble /home/ikun/.local/bin/cmake --install /home/ikun/OpenPCDet_ROS2/build/ros2_numpy

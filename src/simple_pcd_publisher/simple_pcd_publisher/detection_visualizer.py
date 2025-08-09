@@ -34,6 +34,7 @@ class DetectionVisualizer(Node):
             marker.lifetime.sec = 1
             marker_array.markers.append(marker)
         self.publisher.publish(marker_array)
+
 def main(args=None):
     rclpy.init(args=args)
     node = DetectionVisualizer()
