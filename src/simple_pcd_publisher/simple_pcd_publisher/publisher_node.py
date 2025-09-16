@@ -37,7 +37,7 @@ class PointCloudPublisher(Node):
         msg = PointCloud2()
         msg.header = Header()
         msg.header.stamp = timestamp  # 设置传入的时间戳
-        msg.header.frame_id = 'velodyne'  # 根据你的TF调整
+        msg.header.frame_id = 'velodyne'  # 根据TF调整
 
         msg.height = 1
         msg.width = points.shape[0]

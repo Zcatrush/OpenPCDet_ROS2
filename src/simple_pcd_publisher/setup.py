@@ -21,7 +21,7 @@ setup(
     entry_points={
         'console_scripts': [
         'pointcloud_publisher = simple_pcd_publisher.publisher_node:main',
-        'detection_visualizer = simple_pcd_publisher.detection_visualizer:main',
+        #'detection_visualizer = simple_pcd_publisher.detection_visualizer:main',
         ],
     },
 )

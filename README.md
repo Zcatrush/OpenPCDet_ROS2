@@ -16,7 +16,8 @@ sudo apt install ros-humble-ament-cmake-nose -y
 python3 -m pip install nose
 python3 -m pip install transform3d
 rosdep install -i --from-path src --rosdistro humble -y
-
+sudo apt update
+sudo apt install ros-$ROS_DISTRO-vision-msgs-rviz-plugins
 ```
 构建：
 ```

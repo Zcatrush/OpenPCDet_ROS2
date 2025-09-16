@@ -10,7 +10,8 @@ from nav2_common.launch import RewrittenYaml
 def generate_launch_description():
     package_name = 'pcdet_ros2'
     package_dir = get_package_share_directory(package_name)
-    config_file = 'pcdet_pointpillar.param.yaml'
+    config_file = 'pcdet_pvrcnn.param.yaml'
+    #config_file = 'pcdet_pointpillar.param.yaml'
     namespace = LaunchConfiguration('namespace')
     params_file = LaunchConfiguration('params_file')
     input_topic = LaunchConfiguration('input_topic')
@@ -68,17 +69,7 @@ def generate_launch_description():
         }]
     )
 
-    # detection_visualizer node (目标检测可视化节点)
-    detection_visualizer = Node(
-        package='simple_pcd_publisher',
-        executable='detection_visualizer',
-        name='detection_visualizer',
-        output='screen',
-        parameters=[{
-            'input_topic': output_topic,  # detection_visualizer 订阅 /cloud_detections
-            'output_topic': '/detection_markers'  # 发布可视化结果到 /detection_markers
-        }]
-    )
+   
 
     # 使用 GroupAction 来并行启动节点
     ld = LaunchDescription()
@@ -90,8 +81,7 @@ def generate_launch_description():
         declare_input_topic_cmd,
         declare_output_topic_cmd,
         pcdet,
-        pointcloud_publisher,
-        detection_visualizer
+        pointcloud_publisher
     ])
 
     ld.add_action(group_action)
