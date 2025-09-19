@@ -10,7 +10,7 @@ class PointCloudPublisher(Node):
         self.publisher_ = self.create_publisher(PointCloud2, '/point_cloud', 10)
         self.timer = self.create_timer(5, self.timer_callback)  # 发送频率
         self.file_index = 0
-        self.files = sorted(self.get_files('/home/ikun/OpenPCDet/data/kitti/training/velodyne'))
+        self.files = sorted(self.get_files('~/OpenPCDet/data/kitti/training/velodyne'))
         self.get_logger().info(f'Found {len(self.files)} pointcloud files.')
 
     def get_files(self, folder):

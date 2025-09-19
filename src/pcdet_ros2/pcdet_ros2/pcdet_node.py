@@ -60,7 +60,6 @@ class PCDetROS(Node):
         super().__init__('pcdet')
         self.__initParams__()
         self.__initObjects__()
-    
     def __cloudCB__(self, cloud_msg):
         out_msg = Detection3DArray()
         cloud_array = ros2_numpy.point_cloud2.pointcloud2_to_array(cloud_msg)
@@ -68,41 +67,70 @@ class PCDetROS(Node):
 
         scores, dt_box_lidar, types = self.__runTorch__(np_points)
 
+        # 类别映射表（根据 vision_msgs_rviz_plugins 的文档）
+        CLASS_NAME_MAP = {
+            "Pedestrian": "person",
+            "Cyclist": "cyclist",
+            "Car": "car",
+            "Motorcycle": "motorcycle"
+        }
+
         if scores.size != 0:
             for i in range(scores.size):
                 allow_publishing = self.__getPubState__(int(types[i]), scores[i])
-                if(allow_publishing):
+                if allow_publishing:
                     det = Detection3D()
                     det.header.frame_id = cloud_msg.header.frame_id
                     det.header.stamp = self.get_clock().now().to_msg()
+                    
+                    # 方向 (yaw → quaternion)
                     quat = self.__yawToQuaternion__(float(dt_box_lidar[i][6]))
                     det.bbox.center.orientation.x = quat[1]
                     det.bbox.center.orientation.y = quat[2]
                     det.bbox.center.orientation.z = quat[3]
                     det.bbox.center.orientation.w = quat[0]
+
+                    # 中心位置
                     det.bbox.center.position.x = float(dt_box_lidar[i][0])
                     det.bbox.center.position.y = float(dt_box_lidar[i][1])
                     det.bbox.center.position.z = float(dt_box_lidar[i][2]) 
+
+                    # 尺寸
                     det.bbox.size.x = float(dt_box_lidar[i][3])
                     det.bbox.size.y = float(dt_box_lidar[i][4])
                     det.bbox.size.z = float(dt_box_lidar[i][5])
+
+                    # 原始类别名
+                    class_idx = int(types[i]) - 1
+                    if 0 <= class_idx < len(cfg.CLASS_NAMES):
+                        raw_class_name = cfg.CLASS_NAMES[class_idx]
+                    else:
+                        raw_class_name = "Unknown"
+
+                    # 映射到 RViz 插件识别的类别名
+                    class_name = CLASS_NAME_MAP.get(raw_class_name, raw_class_name)
+
+                    # 填写检测结果
                     hypothesis = ObjectHypothesisWithPose()
-                    hypothesis.hypothesis.class_id = str(types[i])
+                    hypothesis.hypothesis.class_id = class_name
                     hypothesis.hypothesis.score = float(scores[i])
                     hypothesis.pose.pose = det.bbox.center
-                    det.id = str(types[i])
+
+                    det.id = class_name
                     det.results.append(hypothesis)
                     out_msg.detections.append(det)
         
         out_msg.header.frame_id = cloud_msg.header.frame_id
         out_msg.header.stamp = self.get_clock().now().to_msg()
 
+        # 发布检测结果
         if len(out_msg.detections) != 0:
             self.__pub_det__.publish(out_msg)
             out_msg.detections = []
         else:
             out_msg.detections = []
             self.__pub_det__.publish(out_msg)
+    
 
     def __convertCloudFormat__(self, cloud_array, remove_nans=True, dtype=float):
         '''
