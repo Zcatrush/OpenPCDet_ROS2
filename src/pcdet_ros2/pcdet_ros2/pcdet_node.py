@@ -142,7 +142,7 @@ class PCDetROS(Node):
         points[..., 1] = cloud_array['y'].astype(dtype)
         points[..., 2] = cloud_array['z'].astype(dtype)
 
-        # === 关键：补 intensity ===
+        # === 补 intensity ===
         if self.__num_features__ >= 4:
             if 'intensity' in cloud_array.dtype.names:
                 intens = cloud_array['intensity'].astype(dtype)
@@ -153,9 +153,6 @@ class PCDetROS(Node):
             else:
                 # 没有强度字段时，给个平稳常数，避免全 0（全 0 的分布和训练差别很大）
                 points[..., 3] = 0.5
-        print("dtype:", points.dtype)
-        print("x-range:", points[...,0].min(), points[...,0].max())
-        print("i-range:", points[...,3].min(), points[...,3].max())
 
         return points
 

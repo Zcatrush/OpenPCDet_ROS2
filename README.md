@@ -18,11 +18,13 @@ python3 -m pip install transform3d
 rosdep install -i --from-path src --rosdistro humble -y
 sudo apt update
 sudo apt install ros-$ROS_DISTRO-vision-msgs-rviz-plugins
+echo "alias colbuild='COLCON_LOG_LEVEL=error AMENT_IGNORE_NONEXISTENT_PACKAGES=1 colcon build --symlink-install'" >> ~/.bashrc
+source ~/.bashrc
 ```
 构建：
 ```
 rm -rf build install log
-colcon build --symlink-install
+colbuild
 ```
 运行：
 ```

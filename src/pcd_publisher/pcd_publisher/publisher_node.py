@@ -9,11 +9,11 @@ class PointCloudPublisher(Node):
     def __init__(self):
         super().__init__('pointcloud_publisher')
         self.publisher_ = self.create_publisher(PointCloud2, '/point_cloud', 10)
-        self.timer = self.create_timer(20, self.timer_callback)  # 发送频率
+        self.timer = self.create_timer(10, self.timer_callback)  # 发送频率
         self.file_index = 0
         data_folder = os.path.expanduser('~/OpenPCDet/data/kitti/testing/velodyne')
+        # data_folder = os.path.expanduser('~/test/test3/bin_output')
         self.files = sorted(self.get_files(data_folder))
-        # self.files = sorted(self.get_files('/home/ikun/OpenPCDet/data/kitti/training/velodyne'))
         self.get_logger().info(f'Found {len(self.files)} pointcloud files.')
 
     def get_files(self, folder):
