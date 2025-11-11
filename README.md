@@ -1,12 +1,12 @@
 # **环境要求**
-修改自https://github.com/pradhanshrijal/pcdet_ros2.git
 - Ubuntu 22.04, ROS 2 Humble
 - CUDA 11.7, CuDNN 8.5.0.96
 - Python 3.10, PyTorch 2.0.1+cu117
 - NumPy 1.25.2
-- OpenPCDet框架
-  - 官方项目：https://github.com/open-mmlab/OpenPCDet.git
-  - 安装参考：https://zhuanlan.zhihu.com/p/663973630
+- 参考：
+  - https://github.com/pradhanshrijal/pcdet_ros2.git
+  - https://github.com/open-mmlab/OpenPCDet.git
+  - https://zhuanlan.zhihu.com/p/663973630
 # **使用方法**
 环境配置：
 ```
@@ -32,6 +32,13 @@ cd ~/OpenPCDet_ROS2
 source install/setup.bash
 ros2 launch pcdet_ros2 pcdet.launch.py
 ```
-
 最后使用rviz2进行可视化.
+# **说明**
+预训练权重请保存至路径：
+```
+src/pcdet_ros2/checkpoints
+```
+若需要更改pth，需要修改`src/pcdet_ros2/config`下对应的文件中的信息.
+如需要更改算法，需要修改`src/pcdet_ros2/launch/pcdet.launch.py`及`src/pcdet_ros2/config`中对应文件的信息.
+点云数据路径需要进入`src/pcd_publisher/pcd_publisher.py`中修改.
 
