@@ -1,5 +1,5 @@
 # **环境要求**
-参考https://github.com/pradhanshrijal/pcdet_ros2.git
+修改自https://github.com/pradhanshrijal/pcdet_ros2.git
 - Ubuntu 22.04, ROS 2 Humble
 - CUDA 11.7, CuDNN 8.5.0.96
 - Python 3.10, PyTorch 2.0.1+cu117
@@ -22,7 +22,7 @@ sudo apt install ros-$ROS_DISTRO-vision-msgs-rviz-plugins
 构建：
 ```
 rm -rf build install log
-colcon build --symlink-install --packages-select ros2_numpy pcdet_ros2 simple_pcd_publisher
+colcon build --symlink-install
 ```
 运行：
 ```

@@ -3,7 +3,7 @@ pcdet:
     config_file: "cfgs/kitti_models/pointpillar.yaml"
     model_file: "checkpoints/pointpillar_7728.pth"
     allow_memory_fractioning: False
-    allow_score_thresholding: True
+    allow_score_thresholding: False
     num_features: 4
     device_id: 0
     device_memory_fraction: 6.0

@@ -9,9 +9,9 @@ class PointCloudPublisher(Node):
     def __init__(self):
         super().__init__('pointcloud_publisher')
         self.publisher_ = self.create_publisher(PointCloud2, '/point_cloud', 10)
-        self.timer = self.create_timer(5, self.timer_callback)  # 发送频率
+        self.timer = self.create_timer(20, self.timer_callback)  # 发送频率
         self.file_index = 0
-        data_folder = os.path.expanduser('~/OpenPCDet/data/kitti/training/velodyne')
+        data_folder = os.path.expanduser('~/OpenPCDet/data/kitti/testing/velodyne')
         self.files = sorted(self.get_files(data_folder))
         # self.files = sorted(self.get_files('/home/ikun/OpenPCDet/data/kitti/training/velodyne'))
         self.get_logger().info(f'Found {len(self.files)} pointcloud files.')
@@ -34,7 +34,8 @@ class PointCloudPublisher(Node):
 
     def read_bin_file(self, filename):
         points = np.fromfile(filename, dtype=np.float32).reshape(-1, 4)
-        return points[:, :3]  # 只取xyz，丢掉反射强度
+        return points  
+
 
     def create_pointcloud2(self, points, timestamp):
         msg = PointCloud2()
@@ -49,10 +50,15 @@ class PointCloudPublisher(Node):
             PointField(name='x', offset=0, datatype=PointField.FLOAT32, count=1),
             PointField(name='y', offset=4, datatype=PointField.FLOAT32, count=1),
             PointField(name='z', offset=8, datatype=PointField.FLOAT32, count=1),
+            PointField(name='intensity', offset=12, datatype=PointField.FLOAT32, count=1),
         ]
 
+        msg.point_step = 16  # 4*4 bytes
+
+       
+        
         msg.is_bigendian = False
-        msg.point_step = 12  # 3*4 bytes
+        msg.point_step = 16  # 4*4 bytes
         msg.row_step = msg.point_step * points.shape[0]
         msg.is_dense = True
         msg.data = points.astype(np.float32).tobytes()

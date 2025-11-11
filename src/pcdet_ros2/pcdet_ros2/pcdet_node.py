@@ -132,17 +132,31 @@ class PCDetROS(Node):
             self.__pub_det__.publish(out_msg)
     
 
-    def __convertCloudFormat__(self, cloud_array, remove_nans=True, dtype=float):
-        '''
-        '''
+    def __convertCloudFormat__(self, cloud_array, remove_nans=True, dtype=np.float32):
         if remove_nans:
             mask = np.isfinite(cloud_array['x']) & np.isfinite(cloud_array['y']) & np.isfinite(cloud_array['z'])
             cloud_array = cloud_array[mask]
-        
+
         points = np.zeros(cloud_array.shape + (self.__num_features__,), dtype=dtype)
-        points[...,0] = cloud_array['x']
-        points[...,1] = cloud_array['y']
-        points[...,2] = cloud_array['z']
+        points[..., 0] = cloud_array['x'].astype(dtype)
+        points[..., 1] = cloud_array['y'].astype(dtype)
+        points[..., 2] = cloud_array['z'].astype(dtype)
+
+        # === 关键：补 intensity ===
+        if self.__num_features__ >= 4:
+            if 'intensity' in cloud_array.dtype.names:
+                intens = cloud_array['intensity'].astype(dtype)
+                # 常见雷达把强度放在 [0,255]，KITTI 是 [0,1]；判断一下范围做归一化
+                if intens.max() > 1.5:
+                    intens = intens / 255.0
+                points[..., 3] = intens
+            else:
+                # 没有强度字段时，给个平稳常数，避免全 0（全 0 的分布和训练差别很大）
+                points[..., 3] = 0.5
+        print("dtype:", points.dtype)
+        print("x-range:", points[...,0].min(), points[...,0].max())
+        print("i-range:", points[...,3].min(), points[...,3].max())
+
         return points
 
     def __runTorch__(self, points):

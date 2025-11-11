@@ -1,6 +1,6 @@
 from setuptools import find_packages, setup
 
-package_name = 'simple_pcd_publisher'
+package_name = 'pcd_publisher'
 
 setup(
     name=package_name,
@@ -20,8 +20,7 @@ setup(
     tests_require=['pytest'],
     entry_points={
         'console_scripts': [
-        'pointcloud_publisher = simple_pcd_publisher.publisher_node:main',
-        #'detection_visualizer = simple_pcd_publisher.detection_visualizer:main',
+        'pointcloud_publisher = pcd_publisher.publisher_node:main'
         ],
     },
 )

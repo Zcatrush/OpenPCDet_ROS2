@@ -34,18 +34,6 @@ def generate_launch_description():
         description='Full path to the ROS 2 parameters file to use for the launched nodes'
     )
 
-    declare_input_topic_cmd = DeclareLaunchArgument(
-        'input_topic',
-        default_value='/point_cloud',  # 输入点云话题
-        description='Input Point Cloud'
-    )
-
-    declare_output_topic_cmd = DeclareLaunchArgument(
-        'output_topic',
-        default_value='/cloud_detections',  # 目标检测的输出话题
-        description='Output Object Detections'
-    )
-
     # pcdet node (目标检测节点)
     pcdet = Node(
         package=package_name,
@@ -54,19 +42,16 @@ def generate_launch_description():
         output='screen',
         parameters=[configured_params,
                     {'package_folder_path': package_dir}],
-        remappings=[("input", input_topic),  # pcdet 接收点云数据
-                    ("output", output_topic)]  # pcdet 发布目标检测结果
+        remappings=[("input", "/point_cloud"),  # pcdet 接收点云数据
+                    ("output", "/cloud_detections")]  # pcdet 发布目标检测结果
     )
 
     # pointcloud_publisher node (点云发布节点)
     pointcloud_publisher = Node(
-        package='simple_pcd_publisher',
+        package='pcd_publisher',
         executable='pointcloud_publisher',
         name='pointcloud_publisher',
-        output='screen',
-        parameters=[{
-            'input_topic': input_topic  # 点云发布到 /point_cloud
-        }]
+        output='screen'
     )
 
    
@@ -78,8 +63,6 @@ def generate_launch_description():
     group_action = GroupAction([
         declare_namespace_cmd,
         declare_params_file_cmd,
-        declare_input_topic_cmd,
-        declare_output_topic_cmd,
         pcdet,
         pointcloud_publisher
     ])
