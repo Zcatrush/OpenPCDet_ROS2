@@ -1,1 +1,0 @@
-/home/ikun/OpenPCDet_ROS2/build/ros2_numpy/ament_cmake_environment_hooks/local_setup.bash

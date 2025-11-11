@@ -9,7 +9,7 @@ class PointCloudPublisher(Node):
     def __init__(self):
         super().__init__('pointcloud_publisher')
         self.publisher_ = self.create_publisher(PointCloud2, '/point_cloud', 10)
-        self.timer = self.create_timer(10, self.timer_callback)  # 发送频率
+        self.timer = self.create_timer(5, self.timer_callback)  # 发送频率
         self.file_index = 0
         data_folder = os.path.expanduser('~/OpenPCDet/data/kitti/training/velodyne')
         self.files = sorted(self.get_files(data_folder))

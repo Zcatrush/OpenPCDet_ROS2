@@ -1,1 +1,0 @@
-/home/ikun/ros2_ws/src/ros2_numpy/ros2_numpy/laser_scan.py

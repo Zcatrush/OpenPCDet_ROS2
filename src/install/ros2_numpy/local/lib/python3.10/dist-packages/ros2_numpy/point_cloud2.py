@@ -1,1 +1,0 @@
-/home/ikun/ros2_ws/src/ros2_numpy/ros2_numpy/point_cloud2.py

@@ -1,1 +1,0 @@
-/home/ikun/ros2_ws/src/build/ros2_numpy/ament_cmake_core/ros2_numpyConfig.cmake

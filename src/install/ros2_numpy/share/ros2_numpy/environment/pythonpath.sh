@@ -1,1 +1,0 @@
-/home/ikun/ros2_ws/src/build/ros2_numpy/ament_cmake_environment_hooks/pythonpath.sh
