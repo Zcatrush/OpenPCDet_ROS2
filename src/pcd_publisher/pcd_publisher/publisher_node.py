@@ -13,6 +13,7 @@ class PointCloudPublisher(Node):
         self.file_index = 0
         # data_folder = os.path.expanduser('~/OpenPCDet/data/kitti/testing/velodyne')
         data_folder = os.path.expanduser('~/kitti_data/training/velodyne')
+        data_folder = os.path.expanduser('~/bin_data')
         self.files = sorted(self.get_files(data_folder))
         self.get_logger().info(f'Found {len(self.files)} pointcloud files.')
 

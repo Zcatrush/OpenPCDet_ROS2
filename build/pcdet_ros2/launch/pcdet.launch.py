@@ -1,1 +1,0 @@
-/home/ikun/OpenPCDet_ROS2/src/pcdet_ros2/launch/pcdet.launch.py

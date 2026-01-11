@@ -1,3 +1,0 @@
-pcdet
-pyquaternion
-setuptools
