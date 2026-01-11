@@ -11,7 +11,7 @@ def generate_launch_description():
     package_name = 'pcdet_ros2'
     package_dir = get_package_share_directory(package_name)
     # config_file = 'pcdet_pvrcnn.param.yaml'
-    config_file = 'pcdet_pointpillar.param.yaml'
+    config_file = 'pcdet_pointrcnn.param.yaml'
     namespace = LaunchConfiguration('namespace')
     params_file = LaunchConfiguration('params_file')
     input_topic = LaunchConfiguration('input_topic')

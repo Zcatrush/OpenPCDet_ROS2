@@ -23,6 +23,7 @@ source ~/.bashrc
 ```
 构建：
 ```
+cd ~/OpenPCDet_ROS2
 rm -rf build install log
 colbuild
 ```
