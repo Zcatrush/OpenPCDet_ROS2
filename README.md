@@ -35,8 +35,8 @@ ros2 launch pcdet_ros2 pcdet.launch.py
 ```
 最后使用rviz2进行可视化.
 # **说明**
-预训练权重请保存至路径：`src/pcdet_ros2/checkpoints`.  
-若需要更改pth，需要修改`src/pcdet_ros2/config`下对应的文件中的信息.  
+首先播放对应的rosbag文件，然后在src/pcdet_ros2/launch/pcdet.launch.py下更改对应的的input topic.
+.pth文件请保存至路径：`src/pcdet_ros2/checkpoints`.  
+若需要更改.pth文件，需要修改`src/pcdet_ros2/config`下对应的文件中的信息.  
 如需要更改算法，需要修改`src/pcdet_ros2/launch/pcdet.launch.py`及`src/pcdet_ros2/config`中对应文件的信息.  
-点云数据路径需要进入`src/pcd_publisher/pcd_publisher.py`中修改.  
 

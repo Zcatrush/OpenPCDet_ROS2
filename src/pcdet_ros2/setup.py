@@ -44,8 +44,8 @@ setup(
     #tests_require=['pytest'],
     entry_points={
         'console_scripts': [
-            'pcdet = pcdet_ros2.pcdet_node:main',
-            'simple_pcd_pub = simple_pcd_publisher.publisher_node:main',
+            'pcdet = pcdet_ros2.pcdet_node:main'
+          
         ],
     },
 )

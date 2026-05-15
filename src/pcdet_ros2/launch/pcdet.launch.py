@@ -43,16 +43,8 @@ def generate_launch_description():
         output='screen',
         parameters=[configured_params,
                     {'package_folder_path': package_dir}],
-        remappings=[("input", "/point_cloud"),  # pcdet 接收点云数据
+        remappings=[("input", "/livox/lidar"),  # pcdet 接收点云数据
                     ("output", "/cloud_detections")]  # pcdet 发布目标检测结果
-    )
-
-    # pointcloud_publisher node (点云发布节点)
-    pointcloud_publisher = Node(
-        package='pcd_publisher',
-        executable='pointcloud_publisher',
-        name='pointcloud_publisher',
-        output='screen'
     )
 
    
@@ -64,8 +56,7 @@ def generate_launch_description():
     group_action = GroupAction([
         declare_namespace_cmd,
         declare_params_file_cmd,
-        pcdet,
-        pointcloud_publisher
+        pcdet
     ])
 
     ld.add_action(group_action)

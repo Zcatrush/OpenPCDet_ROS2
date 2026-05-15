@@ -1,24 +1,3 @@
-"""! @brief Defines the PCDetROS Class.
-The package subscribes to the pointcloud message and publishes instances of object detection.
-"""
-##
-# @file pcdet_node.py
-#
-# @brief Defines the PCDetROS classes.
-#
-# @section description_pcdet_ros Description
-# Defines the class to connect PCDet with the ROS 2 Environment.
-# - PCDetROS
-#
-# @section libraries_pcdet_ros Libraries/Modules
-# - ROS 2 Humble (https://docs.ros.org/en/humble/index.html)
-# - OpenPCDet (https://github.com/open-mmlab/OpenPCDet)
-#
-# @section author_pcdet_ROS Author(s)
-# - Created by Shrijal Pradhan on 16/03/2023.
-#
-# Copyright (c) 2023 Shrijal Pradhan.  All rights reserved.
-
 # Imports
 import rclpy 
 from rclpy.node import Node
@@ -42,21 +21,9 @@ from pcdet.utils import common_utils
 
 
 class PCDetROS(Node):
-    """! The PCDetROS class.
-    Defines the ROS 2 Wrapper class for PCDet.
-    """
+
     def __init__(self):
-        """! The PCDetROS class initializer.
-        @param config_file Path to the configuration file for OpenPCDet.
-        @param package_folder_path Path to the configuration folder, generally inside the ROS 2 Package.
-        @param model_file Path to model used for Detection.
-        @param allow_memory_fractioning Boolean to activate fraction CUDA Memory.
-        @param allow_score_thresholding Boolean to activate score thresholding.
-        @param num_features Number of features in each pointcloud data. 4 for Kitti. 5 for NuScenes
-        @param device_id CUDA Device ID.
-        @param device_memory_fraction Use only the input fraction of the allowed CUDA Memory.
-        @param threshold_array Cutoff threshold array for detections. Even values for detection id, odd values for detection score. Sample: [0, 0.7, 1, 0.5, 2, 0.7].
-        """
+      
         super().__init__('pcdet')
         self.__initParams__()
         self.__initObjects__()
