@@ -34,7 +34,17 @@ def generate_launch_description():
         default_value=os.path.join(package_dir, 'config', config_file),
         description='Full path to the ROS 2 parameters file to use for the launched nodes'
     )
+    declare_input_topic_cmd = DeclareLaunchArgument(     # 第35行
+    'input_topic',
+    default_value='/livox/lidar',
+    description='Input Point Cloud'
+    )
 
+    declare_output_topic_cmd = DeclareLaunchArgument(    # 第41行
+        'output_topic',
+        default_value='cloud_detections',
+        description='Output Object Detections'
+    )
     # pcdet node (目标检测节点)
     pcdet = Node(
         package=package_name,
@@ -43,8 +53,8 @@ def generate_launch_description():
         output='screen',
         parameters=[configured_params,
                     {'package_folder_path': package_dir}],
-        remappings=[("input", "/livox/lidar"),  # pcdet 接收点云数据
-                    ("output", "/cloud_detections")]  # pcdet 发布目标检测结果
+        remappings=[("input", "input_topic"),  # pcdet 接收点云数据
+                    ("output", "output_topic")]  # pcdet 发布目标检测结果
     )
 
    
